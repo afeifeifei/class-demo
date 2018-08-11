@@ -11,14 +11,59 @@
             body,dl,dd,p,h1,h2,h3,h4,h5,h6{margin:0;}
             ol,ul,li{margin:0;padding:0;list-style:none;}
             img{border:none;}
-        
+
+            p{
+                margin: 20px 10px;
+            }
+            span{
+                color: red;
+                font-weight: bolder;
+            }
+
         </style>
     </head>
     <body>
-        <div id="wrap"></div>
+        <div id="wrap">
+            <h3>我朱雀雀今天要吃水果！</h3>
+            <p class="buy">
+                买：
+                <input type="button" value="买个苹果">
+                <input type="button" value="买个梨子">
+            </p>
+            <p class="eat">
+                吃：
+                <input type="button" value="吃个苹果">
+                <input type="button" value="吃个梨子">
+            </p>
+            <p class="total">
+                <b>朱雀雀</b>还剩：<span>0</span>个苹果，<span>0</span>个梨子
+            </p>
+        </div>
         
         <script>
-            
+
+            let aButBuy = document.querySelectorAll(".buy input"),
+                aButEat = document.querySelectorAll(".eat input"),
+                aSpanTotal = document.querySelectorAll(".total span"),
+                numArr = [0,0];
+
+            [...aButBuy].forEach((item,index)=>{
+                item.onclick = function(){
+                    numArr[index] ++;
+                    aSpanTotal[index].innerHTML = numArr[index];
+                };
+            });
+            [...aButEat].forEach((item,index)=>{
+                item.onclick = function(){
+                    numArr[index] --;
+                    if( numArr[index] < 0 ){
+                        numArr[index] = 0;
+                        alert("都没了还吃！！");
+                    }
+                    aSpanTotal[index].innerHTML = numArr[index];
+                };
+            });
+
         </script>
     </body>
 </html>
