@@ -45,13 +45,48 @@
 
     <script>
 
+
         let aButBuy = document.querySelectorAll(".buy input"),
             aButEat = document.querySelectorAll(".eat input"),
             aSpanTotal = document.querySelectorAll(".count span"),
             oTotalSpan = document.querySelector(".total span"),
             numArr = [0,0];
 
+        //单独列出改变HTML内容的所有操作，这个模块只需要数据（numArr）的支撑
+        function changeHTML(){
+            numArr.forEach((item,index)=>{
+                aSpanTotal[index].innerHTML = item;
+            });
+            oTotalSpan.innerHTML = numArr.reduce((a,b)=>a+b);
+        }
+
+        //单独列出计数器的变化，这个模块需要和事件操作联系起来
+        function dataModel(bool,index){
+            if( bool ){
+                numArr[index]++;
+            }else{
+                numArr[index]--;
+                if( numArr[index] < 0 ){
+                    numArr[index] = 0;
+                    alert("都没了还吃！");
+                }
+            }
+        }
+
         [...aButBuy].forEach((item,index)=>{
+            item.onclick = function(){
+                dataModel(true,index);
+                changeHTML();
+            };
+        });
+        [...aButEat].forEach((item,index)=>{
+            item.onclick = function(){
+                dataModel(false,index);
+                changeHTML();
+            };
+        });
+
+        /*[...aButBuy].forEach((item,index)=>{
             item.onclick = function(){
                 numArr[index] ++;
                 aSpanTotal[index].innerHTML = numArr[index];
@@ -68,7 +103,7 @@
                 aSpanTotal[index].innerHTML = numArr[index];
                 oTotalSpan.innerHTML = numArr.reduce((a,b)=>a+b);
             };
-        });
+        });*/
 
     </script>
 </body>
