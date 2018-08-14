@@ -1,0 +1,154 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <meta name="keywords" content="关键词">
+    <meta name="description" content="描述">
+    <meta name="author" content="潭州教育-阿飞老师">
+    <style>
+        body{font-family: "Microsoft YaHei",serif;}
+        body,dl,dd,p,h1,h2,h3,h4,h5,h6{margin:0;}
+        ol,ul,li{margin:0;padding:0;list-style:none;}
+        img{border:none;}
+
+        p{
+            margin: 20px 10px;
+        }
+        span{
+            color: red;
+            font-weight: bolder;
+        }
+
+    </style>
+</head>
+<body>
+    <div id="wrap">
+        <h3>我朱雀雀今天要吃水果！</h3>
+        <p class="buy">
+            买：
+            <input type="button" value="买个苹果">
+            <input type="button" value="买个梨子">
+        </p>
+        <p class="eat">
+            吃：
+            <input type="button" value="吃个苹果">
+            <input type="button" value="吃个梨子">
+        </p>
+        <p class="count">
+            <b>朱雀雀</b>还剩：<span>0</span>个苹果，<span>0</span>个梨子
+        </p>
+        <p class="total">
+            <b>朱雀雀</b>总共还剩：<span>0</span>个水果。
+        </p>
+    </div>
+
+    <script>
+
+
+        let MVC = (function(){
+            //model 数据模型
+            let M = (function(){
+                let data = new Proxy({
+                    nApple : 0,
+                    nPear : 0
+                },{
+                    get(target,key){
+                        console.log("get");
+                        return Reflect.get(target,key);
+                    },
+                    set(target,key,value){
+                        console.log("set");
+                        if( value < 0 ){
+                            console.log("都没了还吃！");
+                        }else{
+                            Reflect.set(target,key,value);
+                            //触发V
+                            V(data);
+                        }
+                    }
+                });
+                return {
+                    add(attr){
+                        data[attr]++;
+                    },
+                    subtract(attr){
+                        data[attr]--;
+                    },
+                    getData(){
+                        return {...data};
+                    }
+                }
+            })();
+
+            //view 视图
+            let V = (function(){
+                //获取页面内容变化的相关DOM
+                let aSpanTotal = document.querySelectorAll(".count span"),
+                    oTotalSpan = document.querySelector(".total span");
+
+                //返回一个接口函数
+                return function(data){
+                    aSpanTotal[0].innerHTML = data.nApple;
+                    aSpanTotal[1].innerHTML = data.nPear;
+                    oTotalSpan.innerHTML = data.nApple + data.nPear;
+                }
+            })();
+
+            //Controller 控制器
+            let C = function(){
+                //获取页面用户操作相关的DOM
+                let aButBuy = document.querySelectorAll(".buy input"),
+                    aButEat = document.querySelectorAll(".eat input");
+                //添加对应的控制事件，同时控制M数据的变化
+                for (let i = 0; i < 2; i++) {
+                    let attr = ["nApple","nPear"][i];
+                    aButBuy[i].onclick = function(){
+                        M.add(attr);
+                    };
+                    aButEat[i].onclick = function(){
+                        M.subtract(attr);
+                    };
+                }
+            };
+
+            return {
+                init(){
+                    V(M.getData());
+                    C();
+                }
+            };
+        })();
+
+        MVC.init();
+
+
+
+
+
+
+       /* let aButBuy = document.querySelectorAll(".buy input"),
+            aButEat = document.querySelectorAll(".eat input"),
+            aSpanTotal = document.querySelectorAll(".count span"),
+            oTotalSpan = document.querySelector(".total span"),
+            numArr = [0,0];*/
+
+
+
+    </script>
+</body>
+</html>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
