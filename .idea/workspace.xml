@@ -1,8 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="9b9ae43b-79ed-4986-8af0-25250cc5f58c" name="Default" comment="">
+    <list default="true" id="9b9ae43b-79ed-4986-8af0-25250cc5f58c" name="Default" comment="二维码上传">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/img/qqqrcode.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/img/wxqrcode.jpg" beforeDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/.tmp/" />
     <ignored path="$PROJECT_DIR$/temp/" />
@@ -16,92 +18,11 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="index.html" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/js-demo/2-07-01/index.html">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="494">
-              <caret line="19" selection-start-line="19" selection-end-line="19" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="01-demo.html" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/MVX/01-demo.html">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="858">
-              <caret line="33" column="18" selection-end-line="83" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="02-demo.html" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/MVX/02-demo.html">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="2184">
-              <caret line="84" column="29" selection-start-line="84" selection-start-column="29" selection-end-line="84" selection-end-column="29" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="03-demo.html" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/MVX/03-demo.html">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="2678">
-              <caret line="103" column="34" selection-start-line="103" selection-start-column="34" selection-end-line="103" selection-end-column="34" />
-            </state>
-          </provider>
-        </entry>
-      </file>
       <file leaf-file-name="04-MVVM.html" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/MVX/04-MVVM.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="572">
-              <caret line="22" column="11" lean-forward="true" selection-start-line="22" selection-start-column="11" selection-end-line="22" selection-end-column="11" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="index.html" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/js-demo/2-07-02/index.html">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="208">
-              <caret line="8" column="25" selection-start-line="8" selection-start-column="25" selection-end-line="8" selection-end-column="25" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="index.html" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/js-demo/2-07-03/index.html">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="390">
-              <caret line="15" selection-start-line="15" selection-end-line="15" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="index.html" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/js-demo/2-07-04/index.html">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="130">
-              <caret line="5" column="17" selection-start-line="5" selection-start-column="17" selection-end-line="5" selection-end-column="17" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="index.html" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/js-demo/2-07-05/index.html">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="182">
-              <caret line="7" column="21" selection-start-line="7" selection-start-column="21" selection-end-line="7" selection-end-column="21" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="index.html" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/js-demo/2-07-06/index.html">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="390">
-              <caret line="15" column="28" selection-start-line="15" selection-start-column="28" selection-end-line="15" selection-end-column="28" />
+            <state relative-caret-position="234">
+              <caret line="9" column="7" selection-start-line="9" selection-start-column="7" selection-end-line="9" selection-end-column="7" />
             </state>
           </provider>
         </entry>
@@ -156,8 +77,8 @@
     <packageJsonPaths />
   </component>
   <component name="ProjectFrameBounds">
-    <option name="x" value="437" />
-    <option name="y" value="47" />
+    <option name="x" value="3" />
+    <option name="y" value="116" />
     <option name="width" value="1335" />
     <option name="height" value="999" />
   </component>
@@ -169,6 +90,7 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
+      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -176,11 +98,15 @@
               <item name="class-demo" type="b2602c69:ProjectViewProjectNode" />
               <item name="class-demo" type="462c0819:PsiDirectoryNode" />
             </path>
+            <path>
+              <item name="class-demo" type="b2602c69:ProjectViewProjectNode" />
+              <item name="class-demo" type="462c0819:PsiDirectoryNode" />
+              <item name="img" type="462c0819:PsiDirectoryNode" />
+            </path>
           </expand>
           <select />
         </subPane>
       </pane>
-      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -195,18 +121,18 @@
     <property name="settings.editor.selected.configurable" value="Settings.JavaScript" />
   </component>
   <component name="RecentsManager">
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\Users\Shinelon\Desktop\class-demo\img" />
+      <recent name="C:\Users\Shinelon\Desktop\class-demo\算法" />
+      <recent name="C:\Users\Shinelon\Desktop\class-demo\MVX" />
+      <recent name="C:\Users\Administrator\Desktop\class-demo\js-demo\2-06-01" />
+    </key>
     <key name="CopyFile.RECENT_KEYS">
       <recent name="C:\Users\Shinelon\Desktop\class-demo\MVX\font" />
       <recent name="C:\Users\Shinelon\Desktop\class-demo\MVX\08-15 img" />
       <recent name="C:\Users\Administrator\Desktop\class-demo\js-demo\2-07-06" />
       <recent name="C:\Users\Administrator\Desktop\class-demo\js-demo\2-07-05" />
       <recent name="C:\Users\Administrator\Desktop\class-demo\js-demo\2-07-04" />
-    </key>
-    <key name="MoveFile.RECENT_KEYS">
-      <recent name="C:\Users\Shinelon\Desktop\class-demo\img" />
-      <recent name="C:\Users\Shinelon\Desktop\class-demo\算法" />
-      <recent name="C:\Users\Shinelon\Desktop\class-demo\MVX" />
-      <recent name="C:\Users\Administrator\Desktop\class-demo\js-demo\2-06-01" />
     </key>
   </component>
   <component name="RunDashboard">
@@ -251,6 +177,7 @@
       <workItem from="1534493829765" duration="700000" />
       <workItem from="1535100481832" duration="904000" />
       <workItem from="1535113844345" duration="130000" />
+      <workItem from="1536135319249" duration="739000" />
     </task>
     <task id="LOCAL-00001" summary="哈哈哈">
       <created>1517901502615</created>
@@ -399,25 +326,32 @@
       <option name="project" value="LOCAL" />
       <updated>1535100638257</updated>
     </task>
-    <option name="localTasksCounter" value="22" />
+    <task id="LOCAL-00022" summary="08-24 修改位置">
+      <created>1536135526482</created>
+      <option name="number" value="00022" />
+      <option name="presentableId" value="LOCAL-00022" />
+      <option name="project" value="LOCAL" />
+      <updated>1536135526482</updated>
+    </task>
+    <option name="localTasksCounter" value="23" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="36215000" />
+    <option name="totallyTimeSpent" value="36954000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="455" y="32" width="1335" height="999" extended-state="0" />
+    <frame x="3" y="116" width="1335" height="999" extended-state="0" />
     <layout>
       <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.10993177" />
       <window_info anchor="bottom" id="TODO" order="6" />
       <window_info anchor="bottom" id="Docker" order="7" show_stripe_button="false" />
-      <window_info anchor="bottom" id="Event Log" order="7" sideWeight="0.50293684" side_tool="true" weight="0.32792583" />
-      <window_info anchor="bottom" id="Version Control" order="7" weight="0.32908458" />
+      <window_info anchor="bottom" id="Event Log" order="7" sideWeight="0.50293684" side_tool="true" weight="0.3272933" />
       <window_info anchor="bottom" id="Run" order="2" />
+      <window_info anchor="bottom" id="Version Control" order="7" weight="0.3372093" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.2496329" />
-      <window_info anchor="bottom" id="Terminal" order="7" sideWeight="0.49706313" weight="0.32908458" />
-      <window_info id="Favorites" order="2" side_tool="true" />
+      <window_info anchor="bottom" id="Terminal" order="7" sideWeight="0.49706313" weight="0.32906976" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
+      <window_info id="Favorites" order="2" side_tool="true" />
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
       <window_info anchor="right" id="Commander" order="0" weight="0.4" />
@@ -446,7 +380,8 @@
     <MESSAGE value="08-17 MVVM" />
     <MESSAGE value="08-24 排序图片" />
     <MESSAGE value="08-24 修改位置" />
-    <option name="LAST_COMMIT_MESSAGE" value="08-24 修改位置" />
+    <MESSAGE value="二维码上传" />
+    <option name="LAST_COMMIT_MESSAGE" value="二维码上传" />
   </component>
   <component name="editorHistoryManager">
     <entry file="file://$PROJECT_DIR$/js-demo/2-06-03/index.html">
@@ -759,8 +694,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/MVX/04-MVVM.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="572">
-          <caret line="22" column="11" lean-forward="true" selection-start-line="22" selection-start-column="11" selection-end-line="22" selection-end-column="11" />
+        <state relative-caret-position="234">
+          <caret line="9" column="7" selection-start-line="9" selection-start-column="7" selection-end-line="9" selection-end-column="7" />
         </state>
       </provider>
     </entry>
