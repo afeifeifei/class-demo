@@ -2,12 +2,6 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="9b9ae43b-79ed-4986-8af0-25250cc5f58c" name="Default" comment="">
-      <change afterPath="$PROJECT_DIR$/MVX/04-MVP.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/MVX/08-15 img/malian.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/MVX/08-15 img/mengqi.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/MVX/08-15 img/wula.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/MVX/08-15 img/zhaoge.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/MVX/08-15 img/zhuque.jpg" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/.tmp/" />
@@ -52,17 +46,17 @@
       <file leaf-file-name="03-demo.html" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/MVX/03-demo.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="367">
+            <state relative-caret-position="2678">
               <caret line="103" column="34" selection-start-line="103" selection-start-column="34" selection-end-line="103" selection-end-column="34" />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="04-MVP.html" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/MVX/04-MVP.html">
+      <file leaf-file-name="04-MVVM.html" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/MVX/04-MVVM.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="1638">
-              <caret line="117" lean-forward="true" selection-start-line="117" selection-end-line="117" />
+            <state relative-caret-position="572">
+              <caret line="22" column="11" lean-forward="true" selection-start-line="22" selection-start-column="11" selection-end-line="22" selection-end-column="11" />
             </state>
           </provider>
         </entry>
@@ -142,6 +136,7 @@
         <option value="$PROJECT_DIR$/MVX/02-demo.html" />
         <option value="$PROJECT_DIR$/MVX/03-demo.html" />
         <option value="$PROJECT_DIR$/MVX/04-MVP.html" />
+        <option value="$PROJECT_DIR$/MVX/04-MVVM.html" />
       </list>
     </option>
   </component>
@@ -161,10 +156,10 @@
     <packageJsonPaths />
   </component>
   <component name="ProjectFrameBounds">
-    <option name="x" value="234" />
-    <option name="y" value="18" />
-    <option name="width" value="1678" />
-    <option name="height" value="1004" />
+    <option name="x" value="437" />
+    <option name="y" value="47" />
+    <option name="width" value="1335" />
+    <option name="height" value="999" />
   </component>
   <component name="ProjectLevelVcsManager" settingsEditedManually="true">
     <ConfirmationsSetting value="2" id="Add" />
@@ -180,17 +175,6 @@
             <path>
               <item name="class-demo" type="b2602c69:ProjectViewProjectNode" />
               <item name="class-demo" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="class-demo" type="b2602c69:ProjectViewProjectNode" />
-              <item name="class-demo" type="462c0819:PsiDirectoryNode" />
-              <item name="MVX" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="class-demo" type="b2602c69:ProjectViewProjectNode" />
-              <item name="class-demo" type="462c0819:PsiDirectoryNode" />
-              <item name="MVX" type="462c0819:PsiDirectoryNode" />
-              <item name="08-15 img" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
@@ -219,6 +203,8 @@
       <recent name="C:\Users\Administrator\Desktop\class-demo\js-demo\2-07-04" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\Users\Shinelon\Desktop\class-demo\img" />
+      <recent name="C:\Users\Shinelon\Desktop\class-demo\算法" />
       <recent name="C:\Users\Shinelon\Desktop\class-demo\MVX" />
       <recent name="C:\Users\Administrator\Desktop\class-demo\js-demo\2-06-01" />
     </key>
@@ -262,6 +248,9 @@
       <workItem from="1534232651491" duration="879000" />
       <workItem from="1534251860989" duration="39000" />
       <workItem from="1534320596370" duration="4272000" />
+      <workItem from="1534493829765" duration="700000" />
+      <workItem from="1535100481832" duration="904000" />
+      <workItem from="1535113844345" duration="130000" />
     </task>
     <task id="LOCAL-00001" summary="哈哈哈">
       <created>1517901502615</created>
@@ -382,17 +371,44 @@
       <option name="project" value="LOCAL" />
       <updated>1534232929107</updated>
     </task>
-    <option name="localTasksCounter" value="18" />
+    <task id="LOCAL-00018" summary="08-17 MVVM">
+      <created>1534493907822</created>
+      <option name="number" value="00018" />
+      <option name="presentableId" value="LOCAL-00018" />
+      <option name="project" value="LOCAL" />
+      <updated>1534493907822</updated>
+    </task>
+    <task id="LOCAL-00019" summary="08-24 排序图片">
+      <created>1535100561192</created>
+      <option name="number" value="00019" />
+      <option name="presentableId" value="LOCAL-00019" />
+      <option name="project" value="LOCAL" />
+      <updated>1535100561192</updated>
+    </task>
+    <task id="LOCAL-00020" summary="08-24 排序图片">
+      <created>1535100581754</created>
+      <option name="number" value="00020" />
+      <option name="presentableId" value="LOCAL-00020" />
+      <option name="project" value="LOCAL" />
+      <updated>1535100581754</updated>
+    </task>
+    <task id="LOCAL-00021" summary="08-24 修改位置">
+      <created>1535100638257</created>
+      <option name="number" value="00021" />
+      <option name="presentableId" value="LOCAL-00021" />
+      <option name="project" value="LOCAL" />
+      <updated>1535100638257</updated>
+    </task>
+    <option name="localTasksCounter" value="22" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="34481000" />
+    <option name="totallyTimeSpent" value="36215000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="234" y="18" width="1678" height="1004" extended-state="0" />
-    <editor active="true" />
+    <frame x="455" y="32" width="1335" height="999" extended-state="0" />
     <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.11251504" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.10993177" />
       <window_info anchor="bottom" id="TODO" order="6" />
       <window_info anchor="bottom" id="Docker" order="7" show_stripe_button="false" />
       <window_info anchor="bottom" id="Event Log" order="7" sideWeight="0.50293684" side_tool="true" weight="0.32792583" />
@@ -427,16 +443,12 @@
     <MESSAGE value="08-11 2" />
     <MESSAGE value="08-11 3" />
     <MESSAGE value="08-14 3" />
-    <option name="LAST_COMMIT_MESSAGE" value="08-14 3" />
+    <MESSAGE value="08-17 MVVM" />
+    <MESSAGE value="08-24 排序图片" />
+    <MESSAGE value="08-24 修改位置" />
+    <option name="LAST_COMMIT_MESSAGE" value="08-24 修改位置" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/js-demo/2-06-02/index.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="650">
-          <caret line="25" column="14" selection-start-line="25" selection-start-column="14" selection-end-line="25" selection-end-column="14" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/js-demo/2-06-03/index.html">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="1664">
@@ -737,17 +749,18 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/MVX/04-MVP.html" />
     <entry file="file://$PROJECT_DIR$/MVX/03-demo.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="367">
+        <state relative-caret-position="2678">
           <caret line="103" column="34" selection-start-line="103" selection-start-column="34" selection-end-line="103" selection-end-column="34" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/MVX/04-MVP.html">
+    <entry file="file://$PROJECT_DIR$/MVX/04-MVVM.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1638">
-          <caret line="117" lean-forward="true" selection-start-line="117" selection-end-line="117" />
+        <state relative-caret-position="572">
+          <caret line="22" column="11" lean-forward="true" selection-start-line="22" selection-start-column="11" selection-end-line="22" selection-end-column="11" />
         </state>
       </provider>
     </entry>
