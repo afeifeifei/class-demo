@@ -1,11 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="9b9ae43b-79ed-4986-8af0-25250cc5f58c" name="Default" comment="二维码上传">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/img/qqqrcode.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/img/wxqrcode.jpg" beforeDir="false" />
-    </list>
+    <list default="true" id="9b9ae43b-79ed-4986-8af0-25250cc5f58c" name="Default" comment="" />
     <ignored path="$PROJECT_DIR$/.tmp/" />
     <ignored path="$PROJECT_DIR$/temp/" />
     <ignored path="$PROJECT_DIR$/tmp/" />
@@ -18,13 +14,18 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="04-MVVM.html" pinned="false" current-in-tab="true">
+      <file leaf-file-name="04-MVVM.html" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/MVX/04-MVVM.html">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="234">
               <caret line="9" column="7" selection-start-line="9" selection-start-column="7" selection-end-line="9" selection-end-column="7" />
             </state>
           </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="qqqrcode1.jpg" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/img/qqqrcode1.jpg">
+          <provider selected="true" editor-type-id="images" />
         </entry>
       </file>
     </leaf>
@@ -177,7 +178,7 @@
       <workItem from="1534493829765" duration="700000" />
       <workItem from="1535100481832" duration="904000" />
       <workItem from="1535113844345" duration="130000" />
-      <workItem from="1536135319249" duration="739000" />
+      <workItem from="1536135319249" duration="1046000" />
     </task>
     <task id="LOCAL-00001" summary="哈哈哈">
       <created>1517901502615</created>
@@ -333,14 +334,28 @@
       <option name="project" value="LOCAL" />
       <updated>1536135526482</updated>
     </task>
-    <option name="localTasksCounter" value="23" />
+    <task id="LOCAL-00023" summary="二维码更新">
+      <created>1536136095107</created>
+      <option name="number" value="00023" />
+      <option name="presentableId" value="LOCAL-00023" />
+      <option name="project" value="LOCAL" />
+      <updated>1536136095107</updated>
+    </task>
+    <task id="LOCAL-00024" summary="二维码更新">
+      <created>1536136237474</created>
+      <option name="number" value="00024" />
+      <option name="presentableId" value="LOCAL-00024" />
+      <option name="project" value="LOCAL" />
+      <updated>1536136237474</updated>
+    </task>
+    <option name="localTasksCounter" value="25" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="36954000" />
+    <option name="totallyTimeSpent" value="37261000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="3" y="116" width="1335" height="999" extended-state="0" />
+    <frame x="238" y="30" width="1335" height="999" extended-state="0" />
     <layout>
       <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.10993177" />
       <window_info anchor="bottom" id="TODO" order="6" />
@@ -381,16 +396,10 @@
     <MESSAGE value="08-24 排序图片" />
     <MESSAGE value="08-24 修改位置" />
     <MESSAGE value="二维码上传" />
-    <option name="LAST_COMMIT_MESSAGE" value="二维码上传" />
+    <MESSAGE value="二维码更新" />
+    <option name="LAST_COMMIT_MESSAGE" value="二维码更新" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/js-demo/2-06-03/index.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1664">
-          <caret line="64" column="16" selection-start-line="64" selection-start-column="16" selection-end-line="64" selection-end-column="16" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/js-demo/2-07-02/index.html">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="208">
@@ -698,6 +707,9 @@
           <caret line="9" column="7" selection-start-line="9" selection-start-column="7" selection-end-line="9" selection-end-column="7" />
         </state>
       </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/img/qqqrcode1.jpg">
+      <provider selected="true" editor-type-id="images" />
     </entry>
   </component>
 </project>
