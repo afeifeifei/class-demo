@@ -1,7 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="9b9ae43b-79ed-4986-8af0-25250cc5f58c" name="Default" comment="" />
+    <list default="true" id="9b9ae43b-79ed-4986-8af0-25250cc5f58c" name="Default" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+    </list>
     <ignored path="$PROJECT_DIR$/.tmp/" />
     <ignored path="$PROJECT_DIR$/temp/" />
     <ignored path="$PROJECT_DIR$/tmp/" />
@@ -23,8 +25,13 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="qqqrcode1.jpg" pinned="false" current-in-tab="true">
+      <file leaf-file-name="qqqrcode1.jpg" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/img/qqqrcode1.jpg">
+          <provider selected="true" editor-type-id="images" />
+        </entry>
+      </file>
+      <file leaf-file-name="wx.jpg" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/img/wx.jpg">
           <provider selected="true" editor-type-id="images" />
         </entry>
       </file>
@@ -78,8 +85,8 @@
     <packageJsonPaths />
   </component>
   <component name="ProjectFrameBounds">
-    <option name="x" value="238" />
-    <option name="y" value="30" />
+    <option name="x" value="410" />
+    <option name="y" value="37" />
     <option name="width" value="1335" />
     <option name="height" value="999" />
   </component>
@@ -91,7 +98,6 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -99,15 +105,11 @@
               <item name="class-demo" type="b2602c69:ProjectViewProjectNode" />
               <item name="class-demo" type="462c0819:PsiDirectoryNode" />
             </path>
-            <path>
-              <item name="class-demo" type="b2602c69:ProjectViewProjectNode" />
-              <item name="class-demo" type="462c0819:PsiDirectoryNode" />
-              <item name="img" type="462c0819:PsiDirectoryNode" />
-            </path>
           </expand>
           <select />
         </subPane>
       </pane>
+      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -119,7 +121,7 @@
     <property name="node.js.path.for.package.prettier" value="project" />
     <property name="node.js.selected.package.prettier" value="" />
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
-    <property name="settings.editor.selected.configurable" value="Settings.JavaScript" />
+    <property name="settings.editor.selected.configurable" value="reference.settingsdialog.IDE.editor.colors" />
   </component>
   <component name="RecentsManager">
     <key name="MoveFile.RECENT_KEYS">
@@ -179,6 +181,9 @@
       <workItem from="1535100481832" duration="904000" />
       <workItem from="1535113844345" duration="130000" />
       <workItem from="1536135319249" duration="1046000" />
+      <workItem from="1536136898999" duration="763000" />
+      <workItem from="1536216739763" duration="71000" />
+      <workItem from="1536216938566" duration="95000" />
     </task>
     <task id="LOCAL-00001" summary="哈哈哈">
       <created>1517901502615</created>
@@ -348,25 +353,32 @@
       <option name="project" value="LOCAL" />
       <updated>1536136237474</updated>
     </task>
-    <option name="localTasksCounter" value="25" />
+    <task id="LOCAL-00025" summary="二维码更新">
+      <created>1536136922127</created>
+      <option name="number" value="00025" />
+      <option name="presentableId" value="LOCAL-00025" />
+      <option name="project" value="LOCAL" />
+      <updated>1536136922127</updated>
+    </task>
+    <option name="localTasksCounter" value="26" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="37261000" />
+    <option name="totallyTimeSpent" value="38190000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="238" y="30" width="1335" height="999" extended-state="0" />
+    <frame x="410" y="37" width="1335" height="999" extended-state="0" />
     <layout>
       <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.10993177" />
       <window_info anchor="bottom" id="TODO" order="6" />
       <window_info anchor="bottom" id="Docker" order="7" show_stripe_button="false" />
       <window_info anchor="bottom" id="Event Log" order="7" sideWeight="0.50293684" side_tool="true" weight="0.3272933" />
-      <window_info anchor="bottom" id="Run" order="2" />
       <window_info anchor="bottom" id="Version Control" order="7" weight="0.3372093" />
+      <window_info anchor="bottom" id="Run" order="2" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.2496329" />
       <window_info anchor="bottom" id="Terminal" order="7" sideWeight="0.49706313" weight="0.32906976" />
-      <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
       <window_info id="Favorites" order="2" side_tool="true" />
+      <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
       <window_info anchor="right" id="Commander" order="0" weight="0.4" />
@@ -400,13 +412,6 @@
     <option name="LAST_COMMIT_MESSAGE" value="二维码更新" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/js-demo/2-07-02/index.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="208">
-          <caret line="8" column="25" selection-start-line="8" selection-start-column="25" selection-end-line="8" selection-end-column="25" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/js-demo/2-07-03/index.html">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="390">
@@ -709,6 +714,9 @@
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/img/qqqrcode1.jpg">
+      <provider selected="true" editor-type-id="images" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/img/wx.jpg">
       <provider selected="true" editor-type-id="images" />
     </entry>
   </component>
