@@ -1,8 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="9b9ae43b-79ed-4986-8af0-25250cc5f58c" name="Default" comment="数据结构">
-      <change beforePath="$PROJECT_DIR$/.idea/inspectionProfiles/Project_Default.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/inspectionProfiles/Project_Default.xml" afterDir="false" />
+    <list default="true" id="9b9ae43b-79ed-4986-8af0-25250cc5f58c" name="Default" comment="作业案例">
+      <change afterPath="$PROJECT_DIR$/js-demo/2-08-05/中奖概率.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/js-demo/2-08-05/无缝轮播.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/js-demo/2-08-05/自动轮播.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/.tmp/" />
@@ -17,90 +19,6 @@
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/js-demo/2-03-02/菜单.html">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="748">
-              <caret line="101" column="58" selection-start-line="101" selection-start-column="58" selection-end-line="101" selection-end-column="58" />
-              <folding>
-                <element signature="e#522#885#0" />
-                <element signature="e#910#954#0" />
-                <element signature="e#977#1324#0" />
-                <element signature="e#1351#1395#0" />
-                <element signature="e#1430#1487#0" />
-                <element signature="e#1527#1578#0" />
-                <element signature="e#1613#1671#0" />
-                <element signature="e#1711#1764#0" />
-                <element signature="e#1799#1859#0" />
-                <element signature="e#1899#1954#0" />
-                <element signature="e#1989#2050#0" />
-                <element signature="e#2090#2146#0" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/js-demo/2-03-01/index.html">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="1196">
-              <caret line="52" column="16" selection-start-line="52" selection-start-column="16" selection-end-line="52" selection-end-column="16" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/js-demo/2-07-01/index.html">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="437">
-              <caret line="19" selection-start-line="19" selection-end-line="19" />
-              <folding>
-                <element signature="n#style#0;n#div#0;n#!!top" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/js-demo/2-07-02/index.html">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="184">
-              <caret line="8" column="25" selection-start-line="8" selection-start-column="25" selection-end-line="8" selection-end-column="25" />
-              <folding>
-                <element signature="n#style#0;n#div#0;n#!!top" expanded="true" />
-                <element signature="n#style#0;n#div#0;n#!!top" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/js-demo/2-07-03/index.html">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="345">
-              <caret line="15" selection-start-line="15" selection-end-line="15" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/js-demo/2-07-04/index.html">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="115">
-              <caret line="5" column="17" selection-start-line="5" selection-start-column="17" selection-end-line="5" selection-end-column="17" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/js-demo/2-07-05/index.html">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="483">
-              <caret line="72" column="28" selection-start-line="72" selection-start-column="28" selection-end-line="72" selection-end-column="28" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/js-demo/2-07-01/九九乘法表.html">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="414">
@@ -109,18 +27,84 @@
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/js-demo/2-06-04/带左右按钮的选项卡.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="598">
-              <caret line="26" column="20" lean-forward="true" selection-start-line="26" selection-start-column="20" selection-end-line="26" selection-end-column="20" />
+            <state relative-caret-position="460">
+              <caret line="20" column="13" lean-forward="true" selection-start-line="20" selection-start-column="13" selection-end-line="20" selection-end-column="13" />
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/js-demo/2-03-03/timg.jpg">
-          <provider selected="true" editor-type-id="images" />
+        <entry file="file://$PROJECT_DIR$/js-demo/2-07-07/02-自定义复选框.html">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="483">
+              <caret line="21" column="13" lean-forward="true" selection-start-line="21" selection-start-column="13" selection-end-line="21" selection-end-column="13" />
+              <folding>
+                <element signature="n#style#0;n#li#0;n#!!top" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/js-demo/2-08-01/index.html">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="-1518" />
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/js-demo/2-x-01/01-节点操作.html">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="390">
+              <caret line="30" column="31" selection-start-line="30" selection-start-column="31" selection-end-line="30" selection-end-column="31" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/js-demo/2-08-04/index.html">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="-2208" />
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/js-demo/2-08-05/查找与替换.html">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="-115">
+              <caret line="22" column="29" lean-forward="true" selection-start-line="22" selection-start-column="29" selection-end-line="22" selection-end-column="29" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/js-demo/2-08-05/中奖概率.html">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="483">
+              <caret line="54" column="18" lean-forward="true" selection-start-line="54" selection-start-column="18" selection-end-line="54" selection-end-column="18" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/js-demo/2-08-05/自动轮播.html">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="575">
+              <caret line="25" column="30" lean-forward="true" selection-start-line="25" selection-start-column="30" selection-end-line="25" selection-end-column="30" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/js-demo/2-08-05/无缝轮播.html">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="552">
+              <caret line="24" column="28" lean-forward="true" selection-start-line="24" selection-start-column="28" selection-end-line="24" selection-end-column="28" />
+            </state>
+          </provider>
         </entry>
       </file>
     </leaf>
@@ -167,8 +151,8 @@
     <auto-save>true</auto-save>
   </component>
   <component name="ProjectFrameBounds">
-    <option name="x" value="327" />
-    <option name="y" value="20" />
+    <option name="x" value="404" />
+    <option name="y" value="10" />
     <option name="width" value="1335" />
     <option name="height" value="999" />
   </component>
@@ -196,25 +180,13 @@
               <item name="class-demo" type="b2602c69:ProjectViewProjectNode" />
               <item name="class-demo" type="462c0819:PsiDirectoryNode" />
               <item name="js-demo" type="462c0819:PsiDirectoryNode" />
-              <item name="2-06-04" type="462c0819:PsiDirectoryNode" />
+              <item name="2-08-05" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="class-demo" type="b2602c69:ProjectViewProjectNode" />
               <item name="class-demo" type="462c0819:PsiDirectoryNode" />
               <item name="js-demo" type="462c0819:PsiDirectoryNode" />
-              <item name="2-07-03" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="class-demo" type="b2602c69:ProjectViewProjectNode" />
-              <item name="class-demo" type="462c0819:PsiDirectoryNode" />
-              <item name="js-demo" type="462c0819:PsiDirectoryNode" />
-              <item name="2-07-04" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="class-demo" type="b2602c69:ProjectViewProjectNode" />
-              <item name="class-demo" type="462c0819:PsiDirectoryNode" />
-              <item name="js-demo" type="462c0819:PsiDirectoryNode" />
-              <item name="2-07-05" type="462c0819:PsiDirectoryNode" />
+              <item name="2-x-01" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
@@ -237,11 +209,11 @@
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="F:\WebstormProjects\class-demo\js-demo\2-08-05" />
+      <recent name="F:\WebstormProjects\class-demo\js-demo\2-07-08" />
+      <recent name="F:\WebstormProjects\class-demo\js-demo\2-07-07" />
       <recent name="F:\WebstormProjects\class-demo\js-demo\2-06-04" />
       <recent name="F:\WebstormProjects\class-demo\js-demo\2-07-01" />
-      <recent name="F:\WebstormProjects\class-demo\数据结构" />
-      <recent name="C:\Users\Shinelon\Desktop\class-demo\MVX\font" />
-      <recent name="C:\Users\Shinelon\Desktop\class-demo\MVX\08-15 img" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
       <recent name="F:\WebstormProjects\class-demo\js-demo\2-03-02" />
@@ -305,7 +277,7 @@
       <workItem from="1556543866753" duration="1913000" />
       <workItem from="1556627976312" duration="1872000" />
       <workItem from="1556871504996" duration="3156000" />
-      <workItem from="1556950703465" duration="1602000" />
+      <workItem from="1556950703465" duration="3322000" />
     </task>
     <task id="LOCAL-00001" summary="哈哈哈">
       <created>1517901502615</created>
@@ -538,14 +510,28 @@
       <option name="project" value="LOCAL" />
       <updated>1556954142143</updated>
     </task>
-    <option name="localTasksCounter" value="34" />
+    <task id="LOCAL-00034" summary="作业案例">
+      <created>1556954560091</created>
+      <option name="number" value="00034" />
+      <option name="presentableId" value="LOCAL-00034" />
+      <option name="project" value="LOCAL" />
+      <updated>1556954560091</updated>
+    </task>
+    <task id="LOCAL-00035" summary="作业案例">
+      <created>1556954879357</created>
+      <option name="number" value="00035" />
+      <option name="presentableId" value="LOCAL-00035" />
+      <option name="project" value="LOCAL" />
+      <updated>1556954879357</updated>
+    </task>
+    <option name="localTasksCounter" value="36" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="49765000" />
+    <option name="totallyTimeSpent" value="51485000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="327" y="20" width="1335" height="999" extended-state="0" />
+    <frame x="404" y="10" width="1335" height="999" extended-state="0" />
     <editor active="true" />
     <layout>
       <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.10948342" />
@@ -590,7 +576,8 @@
     <MESSAGE value="案例" />
     <MESSAGE value="乘法表" />
     <MESSAGE value="数据结构" />
-    <option name="LAST_COMMIT_MESSAGE" value="数据结构" />
+    <MESSAGE value="作业案例" />
+    <option name="LAST_COMMIT_MESSAGE" value="作业案例" />
   </component>
   <component name="editorHistoryManager">
     <entry file="file://$PROJECT_DIR$/ww.html" />
@@ -667,13 +654,6 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/img/wx.jpg">
       <provider selected="true" editor-type-id="images" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/js-demo/2-x-01/01-节点操作.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="390">
-          <caret line="30" column="31" selection-start-line="30" selection-start-column="31" selection-end-line="30" selection-end-column="31" />
-        </state>
-      </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/数据结构/中序遍历.jpg">
       <provider selected="true" editor-type-id="images" />
@@ -782,8 +762,63 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/js-demo/2-06-04/带左右按钮的选项卡.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="598">
-          <caret line="26" column="20" lean-forward="true" selection-start-line="26" selection-start-column="20" selection-end-line="26" selection-end-column="20" />
+        <state relative-caret-position="460">
+          <caret line="20" column="13" lean-forward="true" selection-start-line="20" selection-start-column="13" selection-end-line="20" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/js-demo/2-07-07/02-自定义复选框.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="483">
+          <caret line="21" column="13" lean-forward="true" selection-start-line="21" selection-start-column="13" selection-end-line="21" selection-end-column="13" />
+          <folding>
+            <element signature="n#style#0;n#li#0;n#!!top" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/js-demo/2-08-01/index.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-1518" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/js-demo/2-x-01/01-节点操作.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="390">
+          <caret line="30" column="31" selection-start-line="30" selection-start-column="31" selection-end-line="30" selection-end-column="31" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/js-demo/2-08-04/index.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-2208" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/js-demo/2-08-05/查找与替换.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-115">
+          <caret line="22" column="29" lean-forward="true" selection-start-line="22" selection-start-column="29" selection-end-line="22" selection-end-column="29" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/js-demo/2-08-05/中奖概率.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="483">
+          <caret line="54" column="18" lean-forward="true" selection-start-line="54" selection-start-column="18" selection-end-line="54" selection-end-column="18" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/js-demo/2-08-05/自动轮播.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="575">
+          <caret line="25" column="30" lean-forward="true" selection-start-line="25" selection-start-column="30" selection-end-line="25" selection-end-column="30" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/js-demo/2-08-05/无缝轮播.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="552">
+          <caret line="24" column="28" lean-forward="true" selection-start-line="24" selection-start-column="28" selection-end-line="24" selection-end-column="28" />
         </state>
       </provider>
     </entry>
