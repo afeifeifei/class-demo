@@ -1,0 +1,268 @@
+<!DOCTYPE HTML>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <title>Title</title>
+        <meta name="keywords" content="关键词">
+        <meta name="description" content="描述">
+        <meta name="author" content="潭州教育-阿飞老师">
+        <style>
+            body{font-family: "Microsoft YaHei",serif;}
+            body,dl,dd,p,h1,h2,h3,h4,h5,h6{margin:0;}
+            ol,ul,li{margin:0;padding:0;list-style:none;}
+            img{border:none;}
+
+            #wrap{
+                position: absolute;
+                top: 300px;
+                left: 400px;
+                width: 100px;
+                height: 100px;
+                background-color: pink;
+                user-select: none;
+            }
+            .drag div{
+                position: absolute;
+                width: 100%;
+                height: 100%;
+            }
+            .drag .w{
+                top: 0;
+                left: 0;
+                width: 5px;
+                background-color: #43c052;
+                cursor: w-resize;
+            }
+            .drag .n{
+                top: 0;
+                left: 0;
+                height: 5px;
+                background-color: #43c052;
+                cursor: n-resize;
+            }
+            .drag .e{
+                top: 0;
+                right: 0;
+                width: 5px;
+                background-color: #43c052;
+                cursor: e-resize;
+            }
+            .drag .s{
+                bottom: 0;
+                left: 0;
+                height: 5px;
+                background-color: #43c052;
+                cursor: s-resize;
+            }
+            .drag .nw{
+                top: 0;
+                left: 0;
+                width: 5px;
+                height: 5px;
+                background-color: #f00;
+                cursor: nw-resize;
+            }
+            .drag .ne{
+                top: 0;
+                right: 0;
+                width: 5px;
+                height: 5px;
+                background-color: #f00;
+                cursor: ne-resize;
+            }
+            .drag .se{
+                bottom: 0;
+                right: 0;
+                width: 5px;
+                height: 5px;
+                background-color: #f00;
+                cursor: se-resize;
+            }
+            .drag .sw{
+                bottom: 0;
+                left: 0;
+                width: 5px;
+                height: 5px;
+                background-color: #f00;
+                cursor: sw-resize;
+            }
+        </style>
+    </head>
+    <body>
+        <div id="wrap">
+
+            <div class="drag">
+                <div class="w"></div>
+                <div class="n"></div>
+                <div class="e"></div>
+                <div class="s"></div>
+                <div class="nw"></div>
+                <div class="ne"></div>
+                <div class="se"></div>
+                <div class="sw"></div>
+            </div>
+        </div>
+        
+        <script>
+
+            (function(){
+
+                let oWrap = document.getElementById("wrap");
+                let aDrag = [...document.querySelectorAll("#wrap .drag div")];
+
+                aDrag.forEach((ele,index)=>{
+
+                    //鼠标按下事件
+                    ele.onmousedown = function(ev){
+                        //获取鼠标的按下的位置
+                        let sX = ev.clientX,
+                            sY = ev.clientY;
+                        //获取按下时的宽度
+                        let sWidth = parseFloat(getComputedStyle(oWrap).width);
+                        let sHeight = parseFloat(getComputedStyle(oWrap).height);
+                        let sTop = oWrap.offsetTop;
+                        let sLeft = oWrap.offsetLeft;
+                        //获取left和top的最大值
+                        let maxLeft = sLeft + oWrap.offsetWidth - 10;
+                        let maxTop = sTop + oWrap.offsetHeight - 10;
+
+                        //按下之后，给document添加move事件
+                        document.onmousemove = function(ev){
+                            let [width,height,top,left]=[sWidth,sHeight,sTop,sLeft];
+                            let x_ = ev.clientX - sX,
+                                y_ = ev.clientY - sY;
+
+                            switch(index){
+                                case 0:
+                                    width=sWidth-x_;
+                                    left=sLeft + x_;
+                                    break;
+                                case 1:
+                                    height=sHeight-y_;
+                                    top=sTop+y_;
+                                    break;
+                                case 2:
+                                    width = sWidth+x_;
+                                    break;
+                                case 3:
+                                    height=sHeight+y_;
+                                    break;
+                                case 4:
+                                    width=sWidth-x_;
+                                    left=sLeft + x_;
+                                    height=sHeight-y_;
+                                    top=sTop+y_;
+                                    break;
+                                case 5:
+                                    width = sWidth+x_;
+                                    height=sHeight-y_;
+                                    top=sTop+y_;
+                                    break;
+                                case 6:
+                                    width = sWidth+x_;
+                                    height=sHeight+y_;
+                                    break;
+                                case 7:
+                                    width=sWidth-x_;
+                                    left=sLeft + x_;
+                                    height=sHeight+y_;
+                                    break;
+                            };
+                            width = Math.max(width,10);
+                            height = Math.max(height,10);
+                            left = Math.min(left,maxLeft);
+                            top = Math.min(top,maxTop);
+                            oWrap.style.width = width+'px';
+                            oWrap.style.height = height+'px';
+                            oWrap.style.left = left+'px';
+                            oWrap.style.top = top+'px';
+                        };
+                    };
+
+                });
+
+                //当鼠标抬起的时候，清除document的move事件
+                document.onmouseup = function(){
+                    this.onmousemove = null;
+                };
+
+            })();
+
+
+            /*//e
+                if( index === 2 ){
+                    //获取当前这次move的坐标
+                    let nX = ev.clientX;
+
+                    //鼠标位置的变化量
+                    let x_=nX-sX;
+
+                    //鼠标位置的变化量要等于盒子宽的变化量
+                    let width = sWidth + x_;
+                    width = Math.max(width,10);
+                    oWrap.style.width = width + 'px';
+                }
+
+                //s
+                if( index === 3 ){
+                    let nY = ev.clientY;
+                    let y_ = nY - sY;
+                    let height = sHeight+y_;
+                    height = Math.max(height,10);
+                    oWrap.style.height = height + 'px';
+                }
+
+                //se
+                if( index === 6 ){
+                    let nX = ev.clientX;
+                    let nY = ev.clientY;
+                    let x_=nX-sX;
+                    let y_ = nY - sY;
+                    let width = sWidth + x_;
+                    let height = sHeight+y_;
+                    width = Math.max(width,10);
+                    height = Math.max(height,10);
+                    oWrap.style.width = width + 'px';
+                    oWrap.style.height = height + 'px';
+                }
+
+                //n
+                if( index === 1 ){
+                    let nY = ev.clientY;
+                    let y_ = nY - sY;
+                    let height = sHeight-y_;
+                    height = Math.max(height,10);
+                    let top = sTop+y_;
+                    top = Math.min(top,maxTop);
+                    oWrap.style.height = height + 'px';
+                    oWrap.style.top = top+'px';
+                }
+                //w
+                if( index === 0 ){
+                    let nX = ev.clientX;
+                    let x_=nX-sX;
+                    let width = sWidth - x_;
+                    width = Math.max(width,10);
+                    let left = sLeft+x_;
+                    left = Math.min(left , maxLeft);
+                    oWrap.style.width = width + 'px';
+                    oWrap.style.left = left + 'px';
+                }*/
+
+        </script>
+    </body>
+</html>
+
+
+
+
+
+
+
+
+
+
+
+
+
+

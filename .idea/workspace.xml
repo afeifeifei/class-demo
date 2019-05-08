@@ -2,22 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="9b9ae43b-79ed-4986-8af0-25250cc5f58c" name="Default" comment="作业案例">
-      <change afterPath="$PROJECT_DIR$/js-demo/2-08-05/01-案例-商品按照价格排序.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/js-demo/2-08-05/03-圆周运动-css3.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/js-demo/2-08-05/04-圆周运动-js.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/js-demo/2-08-05/images/price.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/js-demo/2-08-05/images/xh_img1.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/js-demo/2-08-05/images/xh_img10.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/js-demo/2-08-05/images/xh_img11.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/js-demo/2-08-05/images/xh_img2.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/js-demo/2-08-05/images/xh_img3.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/js-demo/2-08-05/images/xh_img4.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/js-demo/2-08-05/images/xh_img5.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/js-demo/2-08-05/images/xh_img6.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/js-demo/2-08-05/images/xh_img7.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/js-demo/2-08-05/images/xh_img8.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/js-demo/2-08-05/images/xh_img9.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/js-demo/2-08-05/随机色卡.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/js-demo/2-x-01/01-作业-改变盒子大小.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/.tmp/" />
@@ -32,44 +17,30 @@
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/js-demo/2-07-07/02-自定义复选框.html">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="483">
-              <caret line="21" column="13" selection-start-line="21" selection-start-column="13" selection-end-line="21" selection-end-column="13" />
-              <folding>
-                <element signature="n#style#0;n#li#0;n#!!top" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/js-demo/2-08-01/index.html">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-1518" />
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/js-demo/2-x-01/01-节点操作.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="390">
-              <caret line="30" column="31" selection-start-line="30" selection-start-column="31" selection-end-line="30" selection-end-column="31" />
+            <state relative-caret-position="183">
+              <caret line="33" column="5" lean-forward="true" selection-start-line="33" selection-start-column="5" selection-end-line="33" selection-end-column="5" />
             </state>
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/js-demo/2-08-04/index.html">
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/js-demo/2-x-01/01-作业-改变盒子大小.html">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="-2208" />
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/js-demo/2-08-04/index.html">
+          <provider selected="true" editor-type-id="text-editor" />
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/js-demo/2-08-05/查找与替换.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-115">
+            <state relative-caret-position="506">
               <caret line="22" column="29" selection-start-line="22" selection-start-column="29" selection-end-line="22" selection-end-column="29" />
             </state>
           </provider>
@@ -78,7 +49,7 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/js-demo/2-08-05/中奖概率.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="483">
+            <state relative-caret-position="1242">
               <caret line="54" column="18" selection-start-line="54" selection-start-column="18" selection-end-line="54" selection-end-column="18" />
             </state>
           </provider>
@@ -96,7 +67,7 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/js-demo/2-08-05/无缝轮播.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="438">
+            <state relative-caret-position="1012">
               <caret line="44" column="33" selection-start-line="44" selection-start-column="33" selection-end-line="44" selection-end-column="33" />
             </state>
           </provider>
@@ -111,13 +82,20 @@
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/js-demo/2-08-05/随机色卡.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state>
-              <folding>
-                <element signature="n#style#0;n#span#0;n#!!top" expanded="true" />
-              </folding>
+            <state relative-caret-position="437">
+              <caret line="19" column="35" lean-forward="true" selection-start-line="19" selection-start-column="35" selection-end-line="19" selection-end-column="35" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/js-demo/2-10-01/滚动时钟.html">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="322">
+              <caret line="14" column="3" lean-forward="true" selection-start-line="14" selection-start-column="3" selection-end-line="14" selection-end-column="3" />
             </state>
           </provider>
         </entry>
@@ -166,7 +144,7 @@
     <auto-save>true</auto-save>
   </component>
   <component name="ProjectFrameBounds">
-    <option name="x" value="384" />
+    <option name="x" value="131" />
     <option name="y" value="16" />
     <option name="width" value="1335" />
     <option name="height" value="999" />
@@ -179,6 +157,7 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
+      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -195,19 +174,12 @@
               <item name="class-demo" type="b2602c69:ProjectViewProjectNode" />
               <item name="class-demo" type="462c0819:PsiDirectoryNode" />
               <item name="js-demo" type="462c0819:PsiDirectoryNode" />
-              <item name="2-08-05" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="class-demo" type="b2602c69:ProjectViewProjectNode" />
-              <item name="class-demo" type="462c0819:PsiDirectoryNode" />
-              <item name="js-demo" type="462c0819:PsiDirectoryNode" />
               <item name="2-x-01" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
         </subPane>
       </pane>
-      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -223,19 +195,19 @@
     <property name="settings.editor.selected.configurable" value="reference.settingsdialog.IDE.editor.colors" />
   </component>
   <component name="RecentsManager">
-    <key name="CopyFile.RECENT_KEYS">
-      <recent name="F:\WebstormProjects\class-demo\js-demo\2-08-05" />
-      <recent name="F:\WebstormProjects\class-demo\js-demo\2-10-01" />
-      <recent name="F:\WebstormProjects\class-demo\js-demo\2-07-08" />
-      <recent name="F:\WebstormProjects\class-demo\js-demo\2-07-07" />
-      <recent name="F:\WebstormProjects\class-demo\js-demo\2-06-04" />
-    </key>
     <key name="MoveFile.RECENT_KEYS">
       <recent name="F:\WebstormProjects\class-demo\js-demo\2-03-02" />
       <recent name="F:\WebstormProjects\class-demo\js-demo" />
       <recent name="F:\WebstormProjects\class-demo\js-demo\2-03-03" />
       <recent name="F:\WebstormProjects\class-demo\中序遍历" />
       <recent name="C:\Users\Shinelon\Desktop\class-demo\js-demo\2-x-01" />
+    </key>
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="F:\WebstormProjects\class-demo\js-demo\2-x-01" />
+      <recent name="F:\WebstormProjects\class-demo\js-demo\2-10-01" />
+      <recent name="F:\WebstormProjects\class-demo\js-demo\2-08-05" />
+      <recent name="F:\WebstormProjects\class-demo\js-demo\2-07-08" />
+      <recent name="F:\WebstormProjects\class-demo\js-demo\2-07-07" />
     </key>
   </component>
   <component name="RunDashboard">
@@ -292,7 +264,10 @@
       <workItem from="1556543866753" duration="1913000" />
       <workItem from="1556627976312" duration="1872000" />
       <workItem from="1556871504996" duration="3156000" />
-      <workItem from="1556950703465" duration="4369000" />
+      <workItem from="1556950703465" duration="5314000" />
+      <workItem from="1557054757219" duration="2044000" />
+      <workItem from="1557216317372" duration="2422000" />
+      <workItem from="1557297117394" duration="1545000" />
     </task>
     <task id="LOCAL-00001" summary="哈哈哈">
       <created>1517901502615</created>
@@ -567,14 +542,28 @@
       <option name="project" value="LOCAL" />
       <updated>1556957035892</updated>
     </task>
-    <option name="localTasksCounter" value="40" />
+    <task id="LOCAL-00040" summary="作业案例">
+      <created>1556957258192</created>
+      <option name="number" value="00040" />
+      <option name="presentableId" value="LOCAL-00040" />
+      <option name="project" value="LOCAL" />
+      <updated>1556957258192</updated>
+    </task>
+    <task id="LOCAL-00041" summary="作业案例">
+      <created>1556957498902</created>
+      <option name="number" value="00041" />
+      <option name="presentableId" value="LOCAL-00041" />
+      <option name="project" value="LOCAL" />
+      <updated>1556957498902</updated>
+    </task>
+    <option name="localTasksCounter" value="42" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="52532000" />
+    <option name="totallyTimeSpent" value="59488000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="384" y="16" width="1335" height="999" extended-state="0" />
+    <frame x="131" y="16" width="1335" height="999" extended-state="0" />
     <layout>
       <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.10948342" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.2496329" />
@@ -587,7 +576,7 @@
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
       <window_info anchor="bottom" id="TODO" order="6" />
       <window_info anchor="bottom" id="Docker" order="7" show_stripe_button="false" />
-      <window_info anchor="bottom" id="Terminal" order="8" sideWeight="0.49706313" visible="true" weight="0.3283237" />
+      <window_info anchor="bottom" id="Terminal" order="8" sideWeight="0.49706313" weight="0.32794458" />
       <window_info anchor="bottom" id="Event Log" order="9" sideWeight="0.50293684" side_tool="true" weight="0.3261851" />
       <window_info anchor="bottom" id="Version Control" order="10" weight="0.3372093" />
       <window_info anchor="right" id="Commander" order="0" weight="0.4" />
@@ -820,32 +809,21 @@
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/js-demo/2-08-01/index.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-1518" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/js-demo/2-x-01/01-节点操作.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="390">
-          <caret line="30" column="31" selection-start-line="30" selection-start-column="31" selection-end-line="30" selection-end-column="31" />
-        </state>
-      </provider>
+      <provider selected="true" editor-type-id="text-editor" />
     </entry>
     <entry file="file://$PROJECT_DIR$/js-demo/2-08-04/index.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-2208" />
-      </provider>
+      <provider selected="true" editor-type-id="text-editor" />
     </entry>
     <entry file="file://$PROJECT_DIR$/js-demo/2-08-05/查找与替换.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-115">
+        <state relative-caret-position="506">
           <caret line="22" column="29" selection-start-line="22" selection-start-column="29" selection-end-line="22" selection-end-column="29" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/js-demo/2-08-05/中奖概率.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="483">
+        <state relative-caret-position="1242">
           <caret line="54" column="18" selection-start-line="54" selection-start-column="18" selection-end-line="54" selection-end-column="18" />
         </state>
       </provider>
@@ -859,7 +837,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/js-demo/2-08-05/无缝轮播.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="438">
+        <state relative-caret-position="1012">
           <caret line="44" column="33" selection-start-line="44" selection-start-column="33" selection-end-line="44" selection-end-column="33" />
         </state>
       </provider>
@@ -873,11 +851,28 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/js-demo/2-08-05/随机色卡.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state>
-          <folding>
-            <element signature="n#style#0;n#span#0;n#!!top" expanded="true" />
-          </folding>
+        <state relative-caret-position="437">
+          <caret line="19" column="35" lean-forward="true" selection-start-line="19" selection-start-column="35" selection-end-line="19" selection-end-column="35" />
         </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/js-demo/2-10-01/滚动时钟.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="322">
+          <caret line="14" column="3" lean-forward="true" selection-start-line="14" selection-start-column="3" selection-end-line="14" selection-end-column="3" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/js-demo/2-x-01/01-节点操作.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="183">
+          <caret line="33" column="5" lean-forward="true" selection-start-line="33" selection-start-column="5" selection-end-line="33" selection-end-column="5" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/js-demo/2-x-01/01-作业-改变盒子大小.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-2208" />
       </provider>
     </entry>
   </component>
