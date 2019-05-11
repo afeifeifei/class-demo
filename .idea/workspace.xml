@@ -1,10 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="9b9ae43b-79ed-4986-8af0-25250cc5f58c" name="Default" comment="作业案例">
-      <change afterPath="$PROJECT_DIR$/js-demo/2-x-01/01-作业-改变盒子大小.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-    </list>
+    <list default="true" id="9b9ae43b-79ed-4986-8af0-25250cc5f58c" name="Default" comment="作业案例" />
     <ignored path="$PROJECT_DIR$/.tmp/" />
     <ignored path="$PROJECT_DIR$/temp/" />
     <ignored path="$PROJECT_DIR$/tmp/" />
@@ -25,16 +22,20 @@
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/js-demo/2-x-01/01-作业-改变盒子大小.html">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="-2208" />
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/js-demo/2-08-04/index.html">
-          <provider selected="true" editor-type-id="text-editor" />
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/js-demo/2-x-01/02-案例-碰撞小球.html">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="69">
+              <caret line="3" column="30" lean-forward="true" selection-start-line="3" selection-start-column="30" selection-end-line="3" selection-end-column="30" />
+            </state>
+          </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
@@ -267,7 +268,7 @@
       <workItem from="1556950703465" duration="5314000" />
       <workItem from="1557054757219" duration="2044000" />
       <workItem from="1557216317372" duration="2422000" />
-      <workItem from="1557297117394" duration="1545000" />
+      <workItem from="1557297117394" duration="2199000" />
     </task>
     <task id="LOCAL-00001" summary="哈哈哈">
       <created>1517901502615</created>
@@ -556,14 +557,22 @@
       <option name="project" value="LOCAL" />
       <updated>1556957498902</updated>
     </task>
-    <option name="localTasksCounter" value="42" />
+    <task id="LOCAL-00042" summary="作业案例">
+      <created>1557303930625</created>
+      <option name="number" value="00042" />
+      <option name="presentableId" value="LOCAL-00042" />
+      <option name="project" value="LOCAL" />
+      <updated>1557303930625</updated>
+    </task>
+    <option name="localTasksCounter" value="43" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="59488000" />
+    <option name="totallyTimeSpent" value="60142000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="131" y="16" width="1335" height="999" extended-state="0" />
+    <editor active="true" />
     <layout>
       <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.10948342" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.2496329" />
@@ -873,6 +882,13 @@
     <entry file="file://$PROJECT_DIR$/js-demo/2-x-01/01-作业-改变盒子大小.html">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="-2208" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/js-demo/2-x-01/02-案例-碰撞小球.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="69">
+          <caret line="3" column="30" lean-forward="true" selection-start-line="3" selection-start-column="30" selection-end-line="3" selection-end-column="30" />
+        </state>
       </provider>
     </entry>
   </component>
