@@ -39,50 +39,29 @@
     </div>
 
     <script>
-
-        function imgLoad(arr,callback){
-            let bool = [];
-            bool.length = arr.length;
-            arr.forEach((src,i)=>{
-                let img = new Image();
-                img.src = src;
-                img.onload = function(){
-                    bool[i] = true;
-                    for(let i = 0; i < bool.length; i++) {
-                        if(!bool[i])return;
-                    }
-                    callback();
-                };
-            });
+        let oWrap = document.getElementById("wrap");
+        document.onkeydown = function(e){
+            let which = e.which;
+            switch ( which ) {
+                case 37:
+                    oWrap.className = "left";
+                    oWrap.style.left = oWrap.offsetLeft - 5 + 'px';
+                    break;
+                case 38:
+                    oWrap.className = "up";
+                    oWrap.style.top = oWrap.offsetTop - 5 + 'px';
+                    break;
+                case 39:
+                    oWrap.className = "right";
+                    oWrap.style.left = oWrap.offsetLeft + 5 + 'px';
+                    break;
+                case 40:
+                    oWrap.className = "down";
+                    oWrap.style.top = oWrap.offsetTop + 5 + 'px';
+                    break;
+            }
         }
 
-        imgLoad(
-            ["img/up.png","img/down.png","img/left.png","img/right.png"],
-            ()=>{
-                let oWrap = document.getElementById("wrap");
-                document.onkeydown = function(e){
-                    let which = e.which;
-                    switch ( which ) {
-                        case 37:
-                            oWrap.className = "left";
-                            oWrap.style.left = oWrap.offsetLeft - 5 + 'px';
-                            break;
-                        case 38:
-                            oWrap.className = "up";
-                            oWrap.style.top = oWrap.offsetTop - 5 + 'px';
-                            break;
-                        case 39:
-                            oWrap.className = "right";
-                            oWrap.style.left = oWrap.offsetLeft + 5 + 'px';
-                            break;
-                        case 40:
-                            oWrap.className = "down";
-                            oWrap.style.top = oWrap.offsetTop + 5 + 'px';
-                            break;
-                    }
-                }
-            }
-        );
     </script>
 </body>
 </html>
