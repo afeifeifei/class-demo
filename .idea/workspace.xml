@@ -2,7 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="9b9ae43b-79ed-4986-8af0-25250cc5f58c" name="Default" comment="作业案例">
-      <change beforePath="$PROJECT_DIR$/js-demo/2-x-02/人物移动.html" beforeDir="false" afterPath="$PROJECT_DIR$/js-demo/2-x-02/人物移动.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/.tmp/" />
     <ignored path="$PROJECT_DIR$/temp/" />
@@ -18,8 +18,8 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/js-demo/2-x-02/人物移动.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="931">
-              <caret line="88" column="14" selection-start-line="88" selection-start-column="14" selection-end-line="88" selection-end-column="14" />
+            <state relative-caret-position="414">
+              <caret line="50" column="43" lean-forward="true" selection-start-line="50" selection-start-column="43" selection-end-line="50" selection-end-column="43" />
             </state>
           </provider>
         </entry>
@@ -91,8 +91,8 @@
     <auto-save>true</auto-save>
   </component>
   <component name="ProjectFrameBounds">
-    <option name="x" value="130" />
-    <option name="y" value="16" />
+    <option name="x" value="495" />
+    <option name="y" value="12" />
     <option name="width" value="1336" />
     <option name="height" value="999" />
   </component>
@@ -115,6 +115,12 @@
               <item name="class-demo" type="b2602c69:ProjectViewProjectNode" />
               <item name="class-demo" type="462c0819:PsiDirectoryNode" />
               <item name="js-demo" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="class-demo" type="b2602c69:ProjectViewProjectNode" />
+              <item name="class-demo" type="462c0819:PsiDirectoryNode" />
+              <item name="js-demo" type="462c0819:PsiDirectoryNode" />
+              <item name="2-x-02" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
@@ -211,7 +217,8 @@
       <workItem from="1557297117394" duration="2199000" />
       <workItem from="1557554066723" duration="1028000" />
       <workItem from="1557555142179" duration="3000" />
-      <workItem from="1557555182135" duration="1089000" />
+      <workItem from="1557555182135" duration="2878000" />
+      <workItem from="1557820381413" duration="32000" />
     </task>
     <task id="LOCAL-00001" summary="哈哈哈">
       <created>1517901502615</created>
@@ -521,14 +528,21 @@
       <option name="project" value="LOCAL" />
       <updated>1557556026179</updated>
     </task>
-    <option name="localTasksCounter" value="45" />
+    <task id="LOCAL-00045" summary="作业案例">
+      <created>1557556465482</created>
+      <option name="number" value="00045" />
+      <option name="presentableId" value="LOCAL-00045" />
+      <option name="project" value="LOCAL" />
+      <updated>1557556465482</updated>
+    </task>
+    <option name="localTasksCounter" value="46" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="62262000" />
+    <option name="totallyTimeSpent" value="64083000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="130" y="16" width="1336" height="999" extended-state="0" />
+    <frame x="495" y="12" width="1336" height="999" extended-state="0" />
     <editor active="true" />
     <layout>
       <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.10939907" />
@@ -853,8 +867,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/js-demo/2-x-02/人物移动.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="931">
-          <caret line="88" column="14" selection-start-line="88" selection-start-column="14" selection-end-line="88" selection-end-column="14" />
+        <state relative-caret-position="414">
+          <caret line="50" column="43" lean-forward="true" selection-start-line="50" selection-start-column="43" selection-end-line="50" selection-end-column="43" />
         </state>
       </provider>
     </entry>
