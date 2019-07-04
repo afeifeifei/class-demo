@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+    <link href="http://moonbuy.cn/mall/static/images/favicon.ico" rel="shortcut icon" type="image/x-icon">
+    <style>
+        *{
+            margin: 0;
+        }
+        canvas{
+            display: block;
+            background: #ddd;
+        }
+    </style>
+</head>
+<body>
+    <canvas></canvas>
+    <script>
+        ;(function () {
+            let oC = document.querySelector('canvas');
+            let cxt = oC.getContext('2d');
+            // canvas大小和浏览器保持一致
+            let w = oC.width = window.innerWidth;
+            let h = oC.height = window.innerHeight;
+
+            let Box = function (x,y,vx,color) {
+                // 属性
+                this.color = color;
+                this.vx = vx;
+                this.x = x;
+                this.y = y;
+                this.w = 10 +Math.random()*50;  // 最小宽10 最大 60
+                this.h = 5 + Math.random()*300; // 最小5 最大 305高
+            }
+            Box.prototype = {
+                update: function(){ // 更新x的坐标 使移动
+                    this.x += this.vx;
+                    if( this.x < -this.w/2 ){
+                        this.x = w+this.w/2;
+                    }
+                },
+                render:function () { // 绘制 一栋楼
+                    cxt.save();
+                    cxt.fillStyle = this.color;
+                    cxt.translate(this.x,this.y); // 原点移到浏览下方
+                    cxt.fillRect(-this.w/2,-this.h,this.w,this.h); // 绘制一栋楼
+                    cxt.restore();
+                }
+            }
+
+            // 创建 50个
+            let num = 50;
+            let box1 = [];
+            let box2 = [];
+            let box3 = [];
+            let speed = -5;
+            let box = null;
+            for ( let i=0;i<num;i++ ){
+                box = new Box(Math.random()*w,h,speed*0.5,'red');
+                box1.push(box);
+            }
+            for ( let i=0;i<num;i++ ){
+                box = new Box(Math.random()*w,h,speed*0.8,'green');
+                box2.push(box);
+            }
+            for ( let i=0;i<num;i++ ){
+                box = new Box(Math.random()*w,h,speed,'blue');
+                box3.push(box);
+            }
+            (function loop() {
+                requestAnimationFrame(loop);
+                cxt.clearRect(0,0,w,h);
+                cxt.globalAlpha = 0.8;
+                for( let i=0,len=box1.length;i<len;i++ ){
+                    box = box1[i];
+                    box.update();
+                    box.render(cxt);
+                }
+
+                for( let i=0,len=box2.length;i<len;i++ ){
+                    box = box2[i];
+                    box.update();
+                    box.render(cxt);
+                }
+                for( let i=0,len=box3.length;i<len;i++ ){
+                    box = box3[i];
+                    box.update();
+                    box.render(cxt);
+                }
+            })();
+
+        })();
+    </script>
+</body>
+</html>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

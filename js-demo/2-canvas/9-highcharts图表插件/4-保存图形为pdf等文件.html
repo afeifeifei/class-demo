@@ -1,0 +1,72 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <!--声明当前页面的编码格式 国际编码 UTF-8 中文编码 GBK-->
+    <meta charset="UTF-8">
+    <!--声明当前页面的三要素-->
+    <meta name="Keywords" content="">
+    <meta name="Description" content="">
+    <title>please enter your title</title>
+	<script src="http://cdn.hcharts.cn/jquery/jquery-1.8.3.min.js"></script>
+	<script src="http://cdn.hcharts.cn/highcharts/highcharts.js"></script>
+	<script src="http://cdn.hcharts.cn/highcharts/highcharts-3d.js"></script>
+	<script src="http://cdn.hcharts.cn/highcharts/modules/exporting.js"></script>
+    <!--样式css 修饰 衣服 化妆品-->
+	<style>
+		*{
+			margin:0;
+			padding:0;
+		}
+		#weather{
+			width:500px;
+			height:300px;
+			margin:100px auto;
+		}
+	</style>
+</head>
+<body>
+	<div id="weather"></div>
+	<script>
+		$("#weather").highcharts({
+			chart: {
+				type: "pie",//圆形图表
+				//设置3D信息
+				options3d: {
+					enabled: true,
+					alpha: 45,//围绕x轴旋转的度数
+					beta: 0//围绕y轴旋转的度数
+					//depth: 50,图表的深度
+				}
+			},
+			title: {
+				text: "2015年各浏览器使用比例"
+			},
+			plotOptions: {
+				pie: {
+					allowPointSelect: true,//是否允许选择
+					cursor: "pointer",//鼠标移上去实现手的形状
+					depth: 50  //3D视图的深度
+				}
+			},
+			series: [{
+				type: "pie",
+				name: "浏览器的比例",
+				data: [
+					["IE", 52.17],
+					["Firefox",11.68],
+					{
+						name: "Chrome",
+						y: 29.49,
+						sliced: true,//默认选中
+						selected: true
+					},
+					["Safari",4.97],
+					["Opera",1.27],
+					["Others",0.42]
+				]
+			}]
+		})
+			
+	</script>
+</body>
+</html>

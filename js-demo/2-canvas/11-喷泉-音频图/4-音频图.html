@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>音频图</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+    <link href="http://moonbuy.cn/mall/static/images/favicon.ico" rel="shortcut icon" type="image/x-icon">
+    <style>
+        body{
+            margin: 0;
+            overflow: hidden;
+        }
+        canvas{
+            position: relative;
+            display: block;
+            background-color: #06AF8F;
+            background: -webkit-linear-gradient( 135deg, rgb(142, 132, 133) 0%, rgb(230, 132, 110) 100% );
+            background: linear-gradient( 135deg, rgb(142, 132, 133) 0%, rgb(230, 132, 110) 100% );
+        }
+        video{
+            position: absolute;
+            top: 0;
+            left: calc( 50% - 300px/2 );
+            width: 300px;
+            height: 150px;
+        }
+    </style>
+</head>
+<body>
+    <canvas></canvas>
+    <script>
+        let oC = document.querySelector('canvas')
+        let cxt = oC.getContext('2d')
+        let w = oC.width = window.innerWidth
+        let h = oC.height = window.innerHeight
+
+        const bg = cxt.createLinearGradient(w/2,h/2-100,w/2,h/2+100)
+        bg.addColorStop(0,'#00f')
+        bg.addColorStop(0.5,'#f00')
+        bg.addColorStop(1,'#0f0')
+
+        window.addEventListener('resize',function () {
+            w = oC.width = window.innerWidth
+            h = oC.height = window.innerHeight
+        })
+        document.addEventListener('dragover',function (e) {
+            e.preventDefault()
+            e.stopPropagation()
+            return false
+        })
+        document.addEventListener('drop',function (e) {
+            let dataTransfer = e.dataTransfer
+            if( dataTransfer.files.length == 1   ){
+                let dataAudio = dataTransfer.files[0]
+                let blob = new Blob([dataAudio])
+                let url = window.URL.createObjectURL(blob)
+
+                if( dataAudio.type.indexOf('audio') != -1 ) player('audio',url);
+                if( dataAudio.type.indexOf('video') != -1 ) player('video',url);
+            }
+
+            e.preventDefault()
+            e.stopPropagation()
+            return false
+        })
+
+        function player(obj,url) {
+            let ele = document.createElement(obj)
+            ele.src = url
+            ele.autoplay = 'autoplay'
+            ele.play()
+            if( obj == 'video' ){
+                document.body.appendChild(ele)
+            }
+            audioCanvas(ele)
+        }
+
+
+        // 通过 音频API 去监听 audio标签 播放时可以得到数据
+        // 在canvas上绘制音频图
+        function audioCanvas(ele) {
+            // 创建音频对象
+            let audioCxt = new AudioContext()
+            // 创建分析机
+            let analyser = audioCxt.createAnalyser()
+
+            // 分析多媒体
+            let audioSrc = audioCxt.createMediaElementSource(ele)
+
+            // 把媒体源 和分析连接进来
+            audioSrc.connect(analyser)
+
+            // mp3 -> 分析机 -> 扬声器
+            audioSrc.connect(audioCxt.destination)
+
+            // 在canvas绘制
+            const count = 200
+            // 获取 音频的频率 数组1024长度
+            let data = new Uint8Array(analyser.frequencyBinCount)
+            console.log(data);
+            // 最开始是木有数据 音频播放 后不断获取 就能够得到播放时数据
+            // 绘制的就是播放时的音频数据
+
+            (function draw() {
+                cxt.clearRect(0,0,w,h)
+                analyser.getByteFrequencyData(data)
+                // 抽样 不需要把把数组里1024个音频数据 都绘制出
+                let step = Math.round(data.length/count)
+                for(let i=0;i<count;i++){
+                    let lineH = data[step*i]
+                    cxt.fillStyle = bg
+                    cxt.fillRect(w/2+i*4,h/2,2,-lineH)
+                    cxt.fillRect(w/2+i*4,h/2,2,lineH)
+
+                    cxt.fillRect((w/2)-i*4,h/2,2,-lineH)
+                    cxt.fillRect((w/2)-i*4,h/2,2,lineH)
+                }
+
+                requestAnimationFrame(draw)
+            })()
+        }
+    </script>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</body>
+</html>

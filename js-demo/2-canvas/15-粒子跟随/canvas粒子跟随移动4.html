@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>TZ-追梦</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0
+        }
+        body{
+            overflow: hidden;
+        }
+        canvas{
+            background-color: #000;
+        }
+    </style>
+</head>
+<body>
+    <canvas>您的浏览器版本过低，请升级！！！</canvas>
+    <script>
+        let canvas,
+            cxt,
+            w = window.innerWidth,
+            h = window.innerHeight,
+            particles,
+            count = 150,
+            mouseX = w/2,
+            mouseY = h/2,
+            radius = 150,
+            onOff = true; // 围成的圆的半径
+        let $ = obj=>document.querySelector(obj);
+        function init() {
+            canvas = $('canvas');
+            if( canvas && canvas.getContext ){
+                cxt = canvas.getContext('2d');
+
+                // 1. 设置 canvas的宽度和浏览器窗口保持一致
+                windowResize();
+                window.addEventListener('resize',windowResize);
+                window.addEventListener('mousemove',mouseMove)
+                // 2. 创建粒子属性
+                createParticles();
+                document.addEventListener('click',isOnOff)
+                // 3. 要canvas上创建 粒子
+                loop();
+            }
+        }
+        function isOnOff() {
+            onOff = !onOff;
+        }
+        function windowResize() {
+            w = window.innerWidth;
+            h = window.innerHeight;
+            canvas.width = w;
+            canvas.height = h;
+        }
+        function randomColor() {
+            let r = Math.floor(Math.random()*256);
+            let g = Math.floor(Math.random()*256);
+            let b = Math.floor(Math.random()*256);
+            let a = Math.random().toFixed(2);
+            return 'rgba('+r+','+g+','+b+','+a+')';
+        }
+        function createParticles() {
+            particles = []; // 创建粒子数组，将来可以改变运动时的参数
+            for(let i=0;i<count;i++){   // 循环给每一个粒子 添加属性
+                let particle = {
+                    size:1, // 线宽
+                    position:{ x:mouseX,y:mouseY },  // 粒子的位置
+                    offset:{x:0,y:0},  //围绕中心旋转的偏移量
+                    shift:{ x:mouseX,y:mouseY  },// 跟随鼠标移动的
+                    speed: Math.random()*0.04+0.01,
+                    fillColor: randomColor(),
+                    orbit:radius*0.5 + (Math.random()*radius*0.5)   // 轨道半径
+                }
+                particles.push(particle);
+            }
+        }
+
+        // 6.跟着鼠标移动
+        function mouseMove(e) {
+            e = e || event;
+            mouseX = e.clientX - (window.innerWidth-w)*0.5;
+            mouseY = e.clientY - (window.innerHeight-h)*0.5;
+
+            //console.log(mouseX,mouseY)
+        }
+
+        function loop() {
+
+            // 绘制粒子
+
+            if( onOff ){
+                cxt.clearRect(0,0,w,h);
+            }else {
+                cxt.fillStyle = 'rgba(0,0,0,0.05)';
+                cxt.fillRect(0,0,w,h);
+            }
+
+
+            for( let i=0,len=particles.length;i<len;i++ ){
+                let particle = particles[i];
+                let startPoint = {
+                    x:particle.position.x,
+                    y:particle.position.y
+                }
+                // 5. 围绕中心点旋转
+                particle.offset.x += particle.speed;
+                particle.offset.y += particle.speed;
+
+                //鼠标移动时赋值
+                particle.shift.x += (mouseX - particle.shift.x)*(particle.speed);
+                particle.shift.y += (mouseY - particle.shift.y)*(particle.speed);
+
+
+                // 4. 让粒子动起来 扩散出去
+                particle.position.x = particle.shift.x + Math.cos(i+particle.offset.x)*(particle.orbit)
+                particle.position.y = particle.shift.y + Math.sin(i+particle.offset.y)*(particle.orbit)
+
+
+                cxt.beginPath();
+                cxt.fillStyle = particle.fillColor;
+                cxt.strokeStyle = particle.fillColor;
+                cxt.lineWidth = particle.size;
+                cxt.moveTo(startPoint.x,startPoint.y);
+                cxt.lineTo(particle.position.x,particle.position.y);
+                cxt.stroke();
+                cxt.arc(particle.position.x,particle.position.y,particle.size/1,0,2*Math.PI,true);
+                cxt.fill();
+            }
+            requestAnimationFrame(loop);
+        }
+        window.onload = init;
+    </script>
+</body>
+</html>
+
+
+
+
+
+
+
+
+
+
+

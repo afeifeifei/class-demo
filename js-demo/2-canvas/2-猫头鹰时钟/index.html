@@ -1,0 +1,253 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>TZ-追梦</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0
+        }
+        html,body{
+            width: 100%;
+            height: 100%;
+            background: url("img/1.jpg") center top/cover;
+            display: flex;
+        }
+        canvas{
+            margin: auto;
+            box-shadow:  0 0 5px rgba(0,0,255,0.5);
+
+        }
+    </style>
+</head>
+<body>
+    <canvas width="460" height="460"></canvas>
+    <audio src="music/second.mp3"></audio>
+    <script>
+        var c = document.querySelector('canvas');
+        var audio = document.querySelector('audio');
+        var cxt = c.getContext('2d');
+        var width = c.width;
+        var height = c.height;
+        var secShadow = 0;
+        var r = width/2;
+        cxt.translate(r,r);
+        var img = new Image();
+        img.src = 'img/owl.jpg';
+        // 绘制背景
+        function drawBg() {
+            cxt.lineWidth = 0.5;
+            cxt.strokeStyle = 'blue';
+            cxt.beginPath();
+            cxt.arc(0,0,r-4,0,6.3);
+            cxt.clip();
+            cxt.save();
+            cxt.globalAlpha = 0.2;
+            cxt.drawImage(img,-r,-r,width,height);
+            cxt.restore();
+            cxt.stroke();
+            cxt.closePath();
+
+
+            drawNumber();
+        }
+
+        // 绘制 12个时钟数字
+        function drawNumber() {
+            var hourArr = ['I','II','III','IV','V','VI','VII','VIII','IX','X','XI','XII'];
+            hourArr.forEach(function (number,i) {
+                cxt.lineWidth = 1;
+                cxt.strokeStyle = 'blue';
+                cxt.font = '22px Arial';
+                cxt.textAlign = 'center';
+                cxt.textBaseline = 'middle';
+                var x = Math.sin( (i+1)*30*Math.PI/180 )*(r-30);
+                var y = -Math.cos( (i+1)*30*Math.PI/180 )*(r-30);
+                cxt.strokeText(number,x,y);
+
+                drawDot();
+            })
+
+        }
+
+        // 绘制分刻度
+        function drawDot() {
+            for( var i=0;i<60;i++ ){
+                var x = Math.sin( (i+1)*6*Math.PI/180 )*(r-30);
+                var y = -Math.cos( (i+1)*6*Math.PI/180 )*(r-30);
+
+                cxt.beginPath();
+                cxt.save();
+                if( (i+1) %5 != 0 ){
+                    cxt.arc(x,y,3,0,2*Math.PI);
+                }
+
+                if( i+1 == secShadow ){
+                    cxt.save();
+                    cxt.fillStyle = 'gold';
+                    cxt.shadowColor = 'blue';
+                    cxt.shadowBlur = 8;
+                    cxt.fill();
+                    cxt.restore();
+                }else{
+                    cxt.save();
+                    cxt.fillStyle = 'blue';
+                    cxt.fill();
+                    cxt.restore();
+                }
+            }
+           // drawHour(1,1);
+        }
+
+        // 绘制 时针
+        function drawHour(hour,min) {
+            cxt.save();
+            cxt.beginPath();
+            cxt.lineWidth = 14;
+            cxt.strokeStyle = '#222';
+            cxt.lineCap = 'round';
+
+            var rad = 2*Math.PI / 12 * hour;
+            var rad_min = 2*Math.PI / 12 / 60 * min;
+            cxt.rotate( rad + rad_min );
+            cxt.moveTo(0,12);
+            cxt.lineTo(0,-92);
+            cxt.stroke();
+            cxt.restore();
+            cxt.closePath();
+
+            //drawMin(1,1);
+        }
+
+        // 绘制 分针
+        function drawMin(min,sec) {
+            cxt.save();
+            cxt.beginPath();
+            cxt.lineWidth = 6;
+            cxt.strokeStyle = 'gold';
+            cxt.fillStyle = 'gold';
+
+            var rad = 2 * Math.PI / 60 * min;
+            var rad_min = 2 * Math.PI / 60 / 60 * sec;
+
+            cxt.rotate(rad+rad_min);
+
+            cxt.moveTo(0,-138);
+            cxt.lineTo(-6,18);
+            cxt.lineTo(6,18);
+            cxt.fill();  // 技艺
+            cxt.restore();
+            cxt.closePath();
+
+           // drawSec(3);
+            audio.play();
+        }
+            
+        // 绘制 秒针
+        function drawSec(sec) {
+            cxt.save();
+            cxt.beginPath();
+            cxt.lineWidth = 6;
+            cxt.fillStyle = 'red';
+
+            var rad = 2 * Math.PI / 60 * sec;
+
+            cxt.rotate(rad);
+
+            cxt.moveTo(0,-184);
+            cxt.lineTo(-6,18);
+            cxt.lineTo(6,18);
+            cxt.fill();  // 技艺
+            cxt.restore();
+            cxt.closePath();
+
+            drawEye(sec);
+        }
+        
+        // 绘制 眼睛
+        function drawEye(sec) {
+            cxt.save();
+            cxt.beginPath();
+            var rad = 2 * Math.PI / 60 * sec;
+            cxt.globalAlpha = 0.4;
+
+            var x1 = -36;
+            var y1 = -51;
+            var r1 = 12;
+
+            var x2 = 37;
+            var y2 = -51;
+            var r2 = 14;
+
+            cxt.arc(x1+9*Math.sin(rad),y1-9*Math.cos(rad),r1,0,2*Math.PI);
+            cxt.arc(x2+12*Math.sin(rad),y2-12*Math.cos(rad),r2,0,2*Math.PI);
+            cxt.fill();
+
+            cxt.restore();
+            cxt.closePath()
+        }
+        drawClock();
+        function drawClock() {
+            cxt.clearRect(-r,-r,width,height);
+            var date = new Date();
+            var hour = date.getHours();
+            var min = date.getMinutes();
+            var sec = date.getSeconds();
+            var second = 0;
+            if( sec < 10 ){
+                sec = '0' + sec;
+            }
+            if(min<10){
+                min = '0'+min;
+            }
+            secShadow = sec;
+            drawBg();
+            drawHour(hour,min);
+            drawMin(min,sec);
+            drawSec(sec);
+
+            document.title = hour + ':' + min + ':' + sec;
+
+            requestAnimationFrame(drawClock);
+        }
+        img.onload = function () {
+            drawBg();
+        }
+
+    </script>
+
+</body>
+</html>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

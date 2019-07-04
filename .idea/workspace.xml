@@ -15,11 +15,20 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/js-demo/2-x-02/人物移动.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="414">
-              <caret line="50" column="43" lean-forward="true" selection-start-line="50" selection-start-column="43" selection-end-line="50" selection-end-column="43" />
+            <state relative-caret-position="1403">
+              <caret line="61" column="13" selection-start-line="61" selection-start-column="13" selection-end-line="61" selection-end-column="13" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/js-demo/2-x-02/正则表单验证.html">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="575">
+              <caret line="106" column="23" selection-start-line="106" selection-start-column="23" selection-end-line="106" selection-end-column="23" />
             </state>
           </provider>
         </entry>
@@ -91,8 +100,8 @@
     <auto-save>true</auto-save>
   </component>
   <component name="ProjectFrameBounds">
-    <option name="x" value="495" />
-    <option name="y" value="12" />
+    <option name="x" value="175" />
+    <option name="y" value="87" />
     <option name="width" value="1336" />
     <option name="height" value="999" />
   </component>
@@ -104,6 +113,7 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
+      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -126,15 +136,15 @@
           <select />
         </subPane>
       </pane>
-      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
     <property name="DefaultHtmlFileTemplate" value="HTML File" />
     <property name="HbShouldOpenHtmlAsHb" value="" />
     <property name="JavaScriptWeakerCompletionTypeGuess" value="true" />
+    <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/../58-js" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/js-demo" />
     <property name="node.js.detected.package.prettier" value="true" />
     <property name="node.js.path.for.package.prettier" value="project" />
     <property name="node.js.selected.package.prettier" value="" />
@@ -142,19 +152,19 @@
     <property name="settings.editor.selected.configurable" value="preferences.fileTypes" />
   </component>
   <component name="RecentsManager">
-    <key name="CopyFile.RECENT_KEYS">
-      <recent name="F:\WebstormProjects\class-demo\js-demo\2-x-02\img" />
-      <recent name="F:\WebstormProjects\class-demo\js-demo\2-x-01" />
-      <recent name="F:\WebstormProjects\class-demo\js-demo\2-10-01" />
-      <recent name="F:\WebstormProjects\class-demo\js-demo\2-08-05" />
-      <recent name="F:\WebstormProjects\class-demo\js-demo\2-07-08" />
-    </key>
     <key name="MoveFile.RECENT_KEYS">
       <recent name="F:\WebstormProjects\class-demo\js-demo\2-03-02" />
       <recent name="F:\WebstormProjects\class-demo\js-demo" />
       <recent name="F:\WebstormProjects\class-demo\js-demo\2-03-03" />
       <recent name="F:\WebstormProjects\class-demo\中序遍历" />
       <recent name="C:\Users\Shinelon\Desktop\class-demo\js-demo\2-x-01" />
+    </key>
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="F:\WebstormProjects\class-demo\js-demo\2-x-02" />
+      <recent name="F:\WebstormProjects\class-demo\js-demo\2-x-02\img" />
+      <recent name="F:\WebstormProjects\class-demo\js-demo\2-x-01" />
+      <recent name="F:\WebstormProjects\class-demo\js-demo\2-10-01" />
+      <recent name="F:\WebstormProjects\class-demo\js-demo\2-08-05" />
     </key>
   </component>
   <component name="RunDashboard">
@@ -218,7 +228,8 @@
       <workItem from="1557554066723" duration="1028000" />
       <workItem from="1557555142179" duration="3000" />
       <workItem from="1557555182135" duration="2878000" />
-      <workItem from="1557820381413" duration="32000" />
+      <workItem from="1557820381413" duration="1902000" />
+      <workItem from="1562227294623" duration="598000" />
     </task>
     <task id="LOCAL-00001" summary="哈哈哈">
       <created>1517901502615</created>
@@ -535,14 +546,21 @@
       <option name="project" value="LOCAL" />
       <updated>1557556465482</updated>
     </task>
-    <option name="localTasksCounter" value="46" />
+    <task id="LOCAL-00046" summary="作业案例">
+      <created>1557820462905</created>
+      <option name="number" value="00046" />
+      <option name="presentableId" value="LOCAL-00046" />
+      <option name="project" value="LOCAL" />
+      <updated>1557820462905</updated>
+    </task>
+    <option name="localTasksCounter" value="47" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="64083000" />
+    <option name="totallyTimeSpent" value="66551000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="495" y="12" width="1336" height="999" extended-state="0" />
+    <frame x="175" y="87" width="1336" height="999" extended-state="0" />
     <editor active="true" />
     <layout>
       <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.10939907" />
@@ -591,7 +609,6 @@
     <option name="LAST_COMMIT_MESSAGE" value="作业案例" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/js-demo/2-06/2-06-01/index.html" />
     <entry file="file://$PROJECT_DIR$/js-demo/2-03/2-03-01/index.html" />
     <entry file="file://$PROJECT_DIR$/js-demo/2-06-02/index.html">
       <provider selected="true" editor-type-id="text-editor">
@@ -867,8 +884,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/js-demo/2-x-02/人物移动.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="414">
-          <caret line="50" column="43" lean-forward="true" selection-start-line="50" selection-start-column="43" selection-end-line="50" selection-end-column="43" />
+        <state relative-caret-position="1403">
+          <caret line="61" column="13" selection-start-line="61" selection-start-column="13" selection-end-line="61" selection-end-column="13" />
         </state>
       </provider>
     </entry>
@@ -883,6 +900,13 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/js-demo/2-x-02/img/up.png">
       <provider selected="true" editor-type-id="images" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/js-demo/2-x-02/正则表单验证.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="575">
+          <caret line="106" column="23" selection-start-line="106" selection-start-column="23" selection-end-line="106" selection-end-column="23" />
+        </state>
+      </provider>
     </entry>
   </component>
 </project>

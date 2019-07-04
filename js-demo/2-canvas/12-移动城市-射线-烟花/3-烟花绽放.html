@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+    <link href="http://moonbuy.cn/mall/static/images/favicon.ico" rel="shortcut icon" type="image/x-icon">
+    <style>
+        *{
+            margin: 0;
+        }
+        html,body{
+            height: 100%;
+        }
+        body{
+            overflow: hidden;
+        }
+        canvas{
+            background: #ddd;
+        }
+    </style>
+</head>
+<body>
+    <canvas></canvas>
+    <script>
+        ;(function (main) {
+            main();
+        })(function () {
+            let oC = document.querySelector('canvas');
+            let cxt = oC.getContext('2d');
+            let W = oC.width = window.innerWidth;
+            let H = oC.height = window.innerHeight;
+            let CX = W/2;
+            let CY = H/2;
+
+            // 粒子
+            let Particle = function (x,y,vx,vy) {
+                this.x = x;  //  lineTo坐标
+                this.y = y;
+                this.ox = x ; // moveTo 中心坐标
+                this.oy = y;
+                this.vx = vx;
+                this.vy = vy;
+                this.alpha = Math.random();
+                this.color = 25;
+                this.lineWidth = Math.random()*4;
+            }
+            Particle.prototype = {
+                update:function () {
+                    this.vx += Math.random()*0.5-0.25;
+                    this.vy += 0.8;
+                    this.vy *= 0.98;  // 0.99 决定向上的冲刺的高度
+                    this.alpha *= 0.95;
+
+                    this.ox = this.x;
+                    this.oy = this.y;
+
+                    this.x += this.vx;
+                    this.y += this.vy;
+
+					this.color += 0.8; // 会变颜色的烟花
+
+                    if( this.y <0 || this.y > H || this.alpha <0.1 ){
+                        this.vx = Math.random()*2-1;
+                        this.vy = Math.random()*-50;
+                        this.ox = this.x = CX;
+                        this.oy = this.y = H;
+                        this.alpha = Math.random();
+                    }
+
+                },
+                render:function () { // 绘制线条
+                    cxt.save();
+                    cxt.globalAlpha = 0.8;
+                    cxt.lineWidth = this.lineWidth;
+                    cxt.strokeStyle = `hsla(${this.color},100%,50%,${this.alpha})`;
+                    // cxt.strokeStyle = 'yellow';
+                    //console.log( `hsla(${this.color},100%,50%,${this.alpha})` )
+                    cxt.beginPath();
+                    cxt.moveTo(this.ox,this.oy);
+                    cxt.lineTo(this.x,this.y);
+                    //console.log( this.ox,this.oy,this.x,this.y )
+                    //console.log( this.y )
+                    cxt.stroke();
+                    cxt.restore();
+                }
+            }
+
+            // 创建 500
+            let particleCount = 500;
+            let particle = null;
+            let particles = [];
+
+            for( let i=0;i<260;i++ ){
+                particle = new Particle(
+                    CX,
+                    H,
+                    Math.random()*2-1,
+                    50
+                );
+                particles.push(particle);
+            }
+            
+            (function loop() {
+                requestAnimationFrame(loop)
+
+                cxt.globalCompositeOperation = 'source-over';
+                cxt.fillStyle = 'rgba(0,0,0,0.5)';
+                cxt.fillRect(0,0,W,H);
+                cxt.globalCompositeOperation = 'lighter';
+
+                if( particles.length < particleCount ){
+                    particle = new Particle(
+                        CX,
+                        H,
+                        Math.random()*2-1,
+                        Math.random()*-50
+                    );
+                    particles.push(particle);
+                }
+
+                for( let i=0,len=particles.length;i<len;i++ ){
+                    particle = particles[i];
+                    particle.update();
+                    particle.render(cxt);
+                }
+            })();
+        });
+    </script>
+</body>
+</html>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

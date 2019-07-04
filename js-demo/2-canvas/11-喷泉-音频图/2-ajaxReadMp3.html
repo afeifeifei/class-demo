@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+    <link href="http://moonbuy.cn/mall/static/images/favicon.ico" rel="shortcut icon" type="image/x-icon">
+</head>
+<body>
+    <script>
+        // 播放 视频或音频
+        // flash embed标签 object
+        // video audio
+        // 用 audio API 可以播放音频
+        // 播放视频 还是用 video
+
+        // 通过 JS API进行音频
+
+        const audioCxt = new AudioContext() // 音频上下对象 提供了很多 属性和方法
+        // console.log(audioCxt)
+        const xhr = new XMLHttpRequest()
+        xhr.responseType = 'arraybuffer'  // 原始类型的数据
+        xhr.onload = function(){
+            // console.log( xhr.response )
+            // 对音频数据解码
+            audioCxt.decodeAudioData(xhr.response,function (buffer) {
+                let sourceNode = audioCxt.createBufferSource()
+                sourceNode.buffer = buffer
+                sourceNode.connect(audioCxt.destination) // 速度扬声器
+                //sourceNode.start(0)
+            })
+        }
+        xhr.open('post','./mp3/1.mp3',true)
+        xhr.send()
+
+    </script>
+</body>
+</html>

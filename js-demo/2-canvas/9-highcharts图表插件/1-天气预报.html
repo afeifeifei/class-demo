@@ -1,0 +1,154 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <!--声明当前页面的编码格式 国际编码 UTF-8 中文编码 GBK-->
+    <meta charset="UTF-8">
+    <!--声明当前页面的三要素-->
+    <meta name="Keywords" content="">
+    <meta name="Description" content="">
+    <title>一周天气预报</title>
+	<script type="text/javascript" src="js/jquery.1.9.1.min.js"></script>
+	<script type="text/javascript" src="js/highcharts.js"></script>
+    <!--样式css 修饰 衣服 化妆品-->
+	<style>
+		*{
+			margin:0;
+			padding:0;
+		}
+		#weather{
+			width:500px;
+			height:300px;
+			margin:100px auto;
+		}
+	</style>
+</head>
+<body>
+	<div id="weather"></div>
+	<script>
+		$("#weather").highcharts({
+			title: {//设置大标题
+				text: "一周天气",
+				x: 10,
+				y: 10,
+				style: {//只能设置文本的样式
+					color: "red",
+					fontWeight: "bold"
+				}
+			},
+			//设置副标题
+			subtitle: {
+				text: "2016-12-19",
+				x: 10,
+				y: 25,
+				style: {//只能设置文本的样式
+					color: "green",
+					fontWeight: "bold"
+				}
+			},
+			series:[
+				{
+					name: "本周天气",
+					data:[25,27,30,28,23,29,35],
+					color: "red"
+				},
+				{
+					name: "下周天气",
+					data:[23,30,25,35,28,30,24],
+					color: "green"
+				}
+			],
+			//设置x横坐标
+			xAxis: {
+				title: {//设置横坐标标题
+					text: "横坐标表示星期",
+					/*x: -100,
+					y: 10*/
+					style: {
+						color: "#99ff66"
+					}
+				},
+				//详细设置每个单元格的信息
+				categories: ["星期一","星期二","星期三","星期四","星期五","星期六","星期日"],
+				//详细设置每个单元格的样式
+				labels: {
+					style: {
+						color: "#aaa",
+						fontSize: "12px"
+					}
+				}
+			},
+			yAxis: {
+				title: {//设置横坐标标题
+					text: "横坐标表示温度，单位是(℃)",
+					/*x: -100,
+					y: 10*/
+					style: {
+						color: "#ff6666"
+					}
+				},
+				labels: {
+					//动态格式化数据
+					formatter: function(){
+						//console.log(this);
+						if (this.value >= 30)
+						{
+							return "炎热" + this.value
+						}else{
+							return "清爽" + this.value
+						}
+					},
+					//enabled: false    默认值true显示  false隐藏
+				}
+			},
+			//设置图例样式
+			legend: {
+				backgroundColor: "#ff99cc",
+				padding: 10
+			},
+			//设置版权信息
+			credits: {
+				text: "玄武",
+				href: "https://www.baidu.com",//连接地址
+				style: {
+					color: "#000",
+				}
+			},
+			//设置提示框信息
+			tooltip: {
+				style: {
+					color: "#ff3300"
+				},
+				//用formatter动态的格式化
+				//formatter: function(){
+					//console.log(this)
+					//return this.x + "----" + this.y +"℃";
+				//}
+				//静态格式化与上面动态格式化方法只能任选其中一个
+				useHTML:true,//让svg图表支持html标签
+				pointFormat: "<h2>{point.y}℃</h2>",
+				headerFormat: "<span>{point.x}</span>"
+			},
+			//设置数据列的详细的信息
+			plotOptions: {
+				series: {
+					dataLabels: {//静态格式化
+						enabled: true,
+						format: "{y}℃",//显示出y坐标的值
+					}
+				}
+			}
+			/*
+				series  图形的数据序列
+				title  图表的大标题
+				subtitle 图表的小标题
+				yAxis 纵坐标
+				xAxis 横坐标
+				tooltip 提示框
+				colors 设置每条曲线的颜色
+				credits 版权信息
+				legend 图例
+			*/
+		});
+	</script>
+</body>
+</html>

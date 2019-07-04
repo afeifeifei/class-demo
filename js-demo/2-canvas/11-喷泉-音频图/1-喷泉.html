@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>喷泉</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+    <link href="http://moonbuy.cn/mall/static/images/favicon.ico" rel="shortcut icon" type="image/x-icon">
+    <style>
+        body{
+            margin: 0;
+            background: #000;
+            overflow: hidden;
+        }
+    </style>
+</head>
+<body>
+    <canvas></canvas>
+    <script>
+        let anim = {
+            init(){
+                this.oC = document.querySelector('canvas')
+                this.cxt = this.oC.getContext('2d')
+                this.letters = 'ABCDEFGHIJKLMNOPQRSTUVWXYZ'
+                this.maxParticle = 100 // 最大的数量
+                this.particles = []  // 每一个字
+
+                this.resize()
+                window.addEventListener('resize',()=>this.resize())
+
+                this.loop()
+            },
+            resize(){
+                this.w = this.oC.width = window.innerWidth
+                this.h = this.oC.height = window.innerHeight
+            },
+            loop(){
+                this.render()
+                requestAnimationFrame(this.loop.bind(this))
+            },
+            render(){
+                // 幻影效果
+                this.fade()
+                // 配置信息
+                this.particles.push({
+                    x: this.w/2,
+                    y: this.h,
+                    xSpeed: (Math.random()*20)-10,
+                    ySpeed: (Math.random()*20)-10,
+                    font: this.letters[Math.floor(Math.random()*this.letters.length)],
+                    color: [155,100,50,0.8]
+                })
+
+                // 删掉之前的字母对象 绘制新push的字母对象
+                this.clearParticles()
+
+                this.drawParticles()
+            },
+            drawParticles(){
+                for( let i=0,pCount=this.particles.length;i<pCount;i++ ){
+                    let particle = this.particles[i]
+                    let h = particle.color[0],
+                        s = particle.color[1]+'%',
+                        l = particle.color[2]+'%',
+                        a = particle.color[3]
+                    let hsla = `hsla(${h},${s},${l},${a})`
+
+                    this.cxt.font = '12px 微软雅黑'
+                    this.cxt.fillStyle = hsla
+                    this.cxt.fillText(particle.font,particle.x,particle.y)
+
+                    // 让字母动起来 其实改变 x y 的坐标
+                    particle.x += particle.xSpeed
+                    particle.y += particle.ySpeed
+                    particle.y *= 0.98
+
+                    particle.color[0] += 1 // 色调
+                    particle.color[2] *= 0.99  // 亮度
+
+                    if( particle.color[0] > 253 ){
+                        particle.color[2] = 100 // 亮度
+                        particle.color[3] = 1 // 透明
+                    }
+                }
+            },
+            fade(){
+                this.cxt.fillStyle = 'rgba(0,0,0,0.1)'
+                this.cxt.fillRect(0,0,this.w,this.h)
+            },
+            clearParticles(){
+                if( this.particles.length > this.maxParticle ){
+                    this.particles.shift()
+                }
+            }
+        }
+        anim.init()
+    </script>
+</body>
+</html>

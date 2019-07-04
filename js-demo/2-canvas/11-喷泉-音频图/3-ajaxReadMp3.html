@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+    <link href="http://moonbuy.cn/mall/static/images/favicon.ico" rel="shortcut icon" type="image/x-icon">
+</head>
+<body>
+    <script>
+        const xhr = new XMLHttpRequest()
+        xhr.responseType = 'arraybuffer'  // 原始类型的数据
+        xhr.onload = function(){
+            const buffer = xhr.response
+            //console.log(buffer)
+            const blob = new Blob([buffer],{type:'audio/mpeg'})
+            //console.log(blob)
+            const url = window.URL.createObjectURL(blob) // 去内存里读取一个播放的url
+            const audio = document.createElement('audio')
+            audio.src = url
+            audio.autoplay = 'autoplay'
+            audio.controls = 'controls'
+            audio.volume = 0.5
+            document.body.appendChild(audio)
+            audio.play()
+            player()
+        }
+        xhr.open('post','./mp3/1.mp3',true)
+        xhr.send()
+
+        // 用户与页面有交互性行为
+        function player(){
+            document.onclick = function () {
+                document.querySelector('audio').play()
+            }
+        }
+
+    </script>
+</body>
+</html>

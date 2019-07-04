@@ -1,0 +1,205 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>TZ-追梦</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+        }
+		body{
+			background:#191828;
+		}
+        canvas{
+            border:10px solid #666;
+			background:#15131E;
+			display:block;
+			margin:100px auto;
+        }
+    </style>
+</head>
+<body>
+    <canvas width="400" height="400"></canvas>
+    <script>
+        let oC = document.querySelector('canvas'),
+		cxt = oC.getContext('2d'),
+
+        // 蛇身颜色
+        snake_color = 'hotpink',
+        // 蛇的边框
+        snake_border_color = '#ddd',
+        // 蛇的眼睛
+        snake_eye_color = 'mediumpurple',
+        // 虫子颜色
+        worm_color = 'yellowgreen',
+
+        //蛇的位置
+        snake_bodys = [{'x':20,'y':20},{'x':40,'y':20},{'x':60,'y':20}],
+        // 蛇的宽度
+        snake_body_len = 20,
+        // 蛇头的位置
+        snake_head = {'x':20,'y':20},
+        // 虫子的位置
+        worm = {'x':200,'y':200},
+        // 得分
+        score = 0,
+        // 方向
+        snake_direction = 'b',  // 默认向下
+        index = 0,
+        // 蛇移动时删除的最后一个格子
+        snake_last;
+        // 游戏是否停止
+        let iStop = false;
+        let timer;
+        // 1-画蛇
+        function erase(){ //清除画布
+            cxt.clearRect(0,0,oC.width,oC.height);
+        }
+        function drawSnake(){
+            cxt.save();
+            cxt.strokeStyle = snake_border_color;
+            cxt.fillStyle = snake_color;
+            for(let i=0;i<snake_bodys.length;i++){
+                cxt.fillRect(snake_bodys[i].x,snake_bodys[i].y,snake_body_len,snake_body_len);
+                cxt.strokeRect(snake_bodys[i].x,snake_bodys[i].y,snake_body_len,snake_body_len);
+            }
+            cxt.restore();
+
+            cxt.save();
+            cxt.fillStyle = snake_eye_color;
+            cxt.beginPath();
+            cxt.arc(snake_head.x+10,snake_head.y+10,5,0,2*Math.PI,false);
+            cxt.fill();
+            cxt.closePath();
+            cxt.restore();
+        }
+        // 3-随机产生虫子
+        function createWorm(){
+            let x = Math.floor(Math.random()*20);
+            let y = Math.floor(Math.random()*20);
+            worm = {'x':x*20,'y':y*20};
+        }
+
+        // 2-画虫子
+        function drawWorm(){
+            cxt.save();
+            cxt.fillStyle = worm_color;
+            cxt.fillRect(worm.x,worm.y,snake_body_len,snake_body_len);
+            cxt.restore();
+        }
+
+        // 4-得分
+        function drawScore(){
+            cxt.save();
+            cxt.font = '20px Verdana';
+            cxt.fillStyle = 'skyblue';
+            cxt.fillText('得分: '+score,300,50);
+            cxt.restore();
+        }
+
+        // 5-游戏结束
+        function drawOver(){
+            cxt.save();
+            cxt.font = '35px Verdana';
+            cxt.fillStyle = 'red';
+            cxt.fillText('游戏结束',140,190);
+            cxt.restore();
+        }
+
+        // 7-向前走
+        function step(){
+            switch (snake_direction){
+                case 'l':
+                    snake_head = {'x':snake_head.x-snake_body_len,'y':snake_head.y};
+                    break;
+                case 't':
+                    snake_head = {'x':snake_head.x,'y':snake_head.y-snake_body_len};
+                    break;
+                case 'r':
+                    snake_head = {'x':snake_head.x+snake_body_len,'y':snake_head.y};
+                    break;
+                case 'b':
+                    snake_head = {'x':snake_head.x,'y':snake_head.y+snake_body_len};
+                    break;
+            }
+            // 是否吃到了虫子
+            if(snake_head.x == worm.x && snake_head.y == worm.y){
+                createWorm();
+                snake_bodys.push(snake_last);
+                score++;
+            }
+
+            snake_last = snake_bodys.pop();
+            snake_bodys.unshift(snake_head);
+
+            //蛇碰到了自身， 游戏结束
+            for(let i=1;i<snake_bodys.length;i++){
+                if(snake_head.x == snake_bodys[i].x && snake_head.y == snake_bodys[i].y){
+                    iStop = true;
+                    break;
+                }
+            }
+
+            // 蛇跑出 边界 游戏结束
+            if(snake_head.x >=400 || snake_head.x <0 || snake_head.y >=400 || snake_head.y <0){
+                iStop =  true;
+            }
+        }
+
+        // 6-键盘控制
+        document.onkeydown = function (e) {
+
+            switch (e.keyCode){
+                // if检测 蛇不能朝着相反移动
+                case 37:  // 左
+                    if(snake_direction!='r')snake_direction = 'l';
+                    break;
+                case 38: // 上
+                   if(snake_direction!='b')snake_direction = 't';
+                    break;
+                case 39: // 右
+                    if(snake_direction!='l')snake_direction = 'r';
+                    break;
+                case 40: // 下
+                    if(snake_direction!='t')snake_direction = 'b';
+                    break;
+            }
+        };
+        window.requestAnimationFrame =
+                window.requestAnimationFrame ||
+                window.mozRequestAnimationFrame ||
+                window.webkitRequestAnimationFrame ||
+                window.msRequestAnimationFrame;
+
+        window.cancelAnimationFrame =
+                window.cancelAnimationFrame ||
+                window.cancelRequestAnimationFrame ||
+                window.mozCancelRequestAnimationFrame ||
+                window.webkitCancelRequestAnimationFrame ||
+                window.msCancelRequestAnimationFrame;
+
+
+        // 8-动画
+        function animate(){
+            index++;
+            if(index%10 ==0){
+                step();
+            }
+            erase();
+            drawSnake(); // 1-画蛇
+            drawWorm(); // 2-画虫子
+            drawScore(); // 4-得分
+
+            if(iStop){
+                cancelAnimationFrame(timer);
+                drawOver(); // 5-游戏结束
+            }else {
+                timer = requestAnimationFrame(animate);
+            }
+
+        };
+        animate();
+    </script>
+</body>
+</html>

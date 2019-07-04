@@ -1,0 +1,333 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <meta name="keywords" content="关键词">
+    <meta name="description" content="描述">
+    <meta name="author" content="DF">
+    <style>
+        body{font-family: "Microsoft YaHei",serif;user-select:none;}
+        body,dl,dd,p,h1,h2,h3,h4,h5,h6{margin:0;}
+        ol,ul,li{margin:0;padding:0;list-style:none;}
+        img{border:none;}
+
+        #canvas{
+            display: block;
+            margin:0 auto;
+        }
+    </style>
+</head>
+<body>
+    <canvas id="canvas" width="1024" height="650"></canvas>
+</body>
+<script>
+    // 获取 画笔
+    var canvas = document.querySelector("#canvas");
+    // 获取 上下文/画笔
+    var context = canvas.getContext("2d");
+    var turretIndex = 1;
+    var isHas = false;
+    var fishs = [
+        {img : "images/fish1.png", w : 55, h : 37, m : 4 },
+        {img : "images/fish2.png", w : 78, h : 64, m : 4 },
+        {img : "images/fish3.png", w : 72, h : 56, m : 4 },
+        {img : "images/fish4.png", w : 77, h : 59, m : 4 },
+        {img : "images/fish5.png", w : 107, h : 122, m : 4 },
+        {img : "images/fish6.png", w : 105, h : 79, m : 8 },
+        {img : "images/fish7.png", w : 92, h : 151, m : 6 },
+        {img : "images/fish8.png", w : 174, h : 126, m : 8 },
+        {img : "images/fish9.png", w : 166, h : 183, m : 8 },
+        {img : "images/fish10.png", w : 178, h : 187, m : 6 },
+        {img : "images/fish11.png", w : 509, h : 270, m : 8 },
+        {img : "images/fish12.png", w : 516, h : 273, m : 8 }
+    ];
+    // 公用类
+    function Public(x,y,src,w,h){
+        this.x = x;
+        this.y = y;
+        this.src = src;
+        this.w = w;
+        this.h = h;
+    }
+    Public.prototype.draw = function(){
+        var image = new Image();
+        image.src = this.src;
+        context.drawImage(image,this.x,this.y,this.w,this.h);
+    }
+    function Turret(x,y,src){
+        this.x = x;
+        this.y = y;
+        this.src = src;
+        this.w = 74;
+        this.h = 74;
+        this.deg = 0;
+    }
+    Turret.prototype.draw = function(){
+        var image = new Image();
+        image.src = this.src;
+        context.save();
+        context.translate(555, 620);
+        context.rotate(this.deg);
+        context.beginPath();
+        context.drawImage(image,this.x,this.y,this.w,this.h,0 - 37,0 - 37,this.w,this.h);
+        context.restore();
+    }
+    // 炮弹
+    function Bullet(x,y,src,w,h,speeX,speeY,deg){
+        this.x = x;
+        this.y = y;
+        this.src = src;
+        this.w = w;
+        this.h = h;
+        this.speeX = speeX;
+        this.speeY = speeY;
+        this.deg = deg;
+    }
+    Bullet.prototype.draw = function(){
+        var image = new Image();
+        image.src = this.src;
+        if(this.x <= 0 || this.x >= canvas.width || this.y <= - canvas.height || this.y >= canvas.height){
+            bulletArr.splice(0,1);
+        }
+        context.beginPath();
+        this.x += this.speeX;
+        this.y += this.speeY;
+        context.drawImage(image,this.x+this.w/2,this.y,this.w,this.h);
+        context.fill();
+    }
+    // 鱼
+    function Fish(x,y,src,w,h,x1,y1,w1,h1,m){
+        this.x = x;
+        this.y = y;
+        this.src = src;
+        this.m = m;
+        this.w = w;
+        this.h = h;
+        this.w1 = w1;
+        this.h1 = h1;
+        this.x1 = Math.random() > 0.5 ? 0 : canvas.width;
+        this.y1 = y1;
+        this.change = 0;
+        this.small = 0;
+        this.speed = 3;
+        // this.deg = Math.PI / 180 * Math.random() * 45 * this.speed;
+        // this.speedX = Math.cos(this.deg) * this.speed;
+        // this.speedY = Math.sin(this.deg);
+        this.isDie = false;
+    }
+    Fish.prototype.draw = function(){
+        for(var i = 0; i < fishArray.length; i++){
+            if(fishArray[i].isDie == true){
+                fishArray.splice(i,1);
+            }
+        }
+        context.beginPath();
+        var image = new Image();
+        image.src = this.src;
+        this.change++;
+        if(this.change % 10 == 0){
+            this.small++;
+        }
+        if(this.small >= this.m){
+            this.small = 0;
+        }
+        // if(this.x1 < 0 || this.x1 > canvas.width || this.y1 < 0 || this.y1 > canvas.height){
+        //     console.log(this.x1 )
+        //     isHas = true;
+        // }
+        this.x1 += this.speed;
+        // this.y1 += this.speedY;
+        context.drawImage(image,0,this.h1*this.small,this.w,this.h,this.x1,this.y1,this.w1,this.h1)
+    }
+    //渔网
+    function Webyu(src,x,y,w,h){
+        this.src = src;
+        this.x = x;
+        this.y = y;
+        this.w = w;
+        this.h = h;
+    }
+    Webyu.prototype.draw = function(){
+        context.beginPath();
+        context.rect(this.x,this.y,this.w,this.h);
+        var image = new Image();
+        image.src = this.src;
+        context.drawImage(image,this.x,this.y,this.w,this.h);
+    }
+    // 背景
+    var bg = new Public(0,0,"images/bg4.png",1024,650);
+    // 底部
+    var bot = new Public(129,578,"images/bottomBar.png",765,72);
+    // 能量条
+    var energy = new Public(672,622,"images/energyBar.png",213,19);
+    // 炮体
+    var turret = new Turret(0,0,"images/cannon1.png");
+    // 炮弹升级
+    var turretAdd = new Public(585,615,"images/cannonPlus.png",44,31);
+    // 炮弹降级
+    var turretLower = new Public(480,615,"images/cannonMinus.png",44,31);
+    // 鼠标事件
+    var bulletArr = [];
+    document.onmousedown = function(){
+        var e = event || window.event;
+        var xd = e.clientX - canvas.offsetLeft;
+        var yd = e.clientY - canvas.offsetTop;
+        if(xd > 480 && xd < 524 && yd > 615 && yd < 646){
+            turretLower.src = "images/cannon_minus_down.png";
+            if(turretIndex == 1){
+                turretIndex =  7;
+                turret.src = "images/cannon1.png";
+            }else{
+                turretIndex--;
+            }
+        }else if(xd > 585 && xd < 629 && yd > 615 && yd < 646){
+            turretAdd.src = "images/cannon_plus_down.png";
+            if(turretIndex == 7){
+                turretIndex =  1;
+                turret.src = "images/cannon7.png";
+            }else{
+                turretIndex++;
+            }
+        }
+    }
+    var date = new Date();
+    canvas.onmouseup = function(){
+        var e = event || window.event;
+        var xd = e.clientX - canvas.offsetLeft;
+        var yd = e.clientY - canvas.offsetTop;
+        var e = event || window.event;
+        var cx = e.clientX - canvas.width/2 - 290;
+        var cy = e.clientY - canvas.height;
+        turret.deg = Math.atan2(cy,cx) + Math.PI / 2;
+        var ro = turret.deg + Math.PI / 2;
+        speeX = Math.cos(ro) * - 10;
+        speeY = Math.sin(ro) * - 10;
+        if(xd > 480 && xd < 524 && yd > 615 && yd < 646){
+            turretLower.src = "images/cannonMinus.png";
+            turret.src = "images/cannon"+turretIndex+".png";
+        }else if(xd > 585 && xd < 629 && yd > 615 && yd < 646){
+            turretAdd.src = "images/cannonPlus.png";
+            turret.src = "images/cannon"+turretIndex+".png";
+        }else{
+            var array = [[0,0],[24,26],[25,29],[27,31],[29,33],[30,34],[31,35],[32,38]];
+            if(new Date() - date > 100){
+                var bullet = new Bullet(canvas.width/2 + 20,canvas.height - 40,"images/bullet"+turretIndex+".png",array[turretIndex][0],array[turretIndex][1],speeX,speeY,turret.deg);
+                bulletArr.push(bullet);
+                date = new Date();
+            }
+
+        }
+    }
+    canvas.onmousemove = function(event){
+        var e = event || window.event;
+        var cx = e.clientX - canvas.width/2 - 290;
+        var cy = e.clientY - canvas.height;
+        turret.deg = Math.atan2(cy,cx) + Math.PI / 2;
+    }
+    var fishsNum = 0;
+    var fishArray = []
+    function animate(){
+        context.clearRect(0,0,canvas.width,canvas.height);
+        fishsNum++;
+        bg.draw();
+        if(fishsNum % 10 == 0){
+            var fishNum = odds(parseInt(Math.random() * 100));
+            var fishIndex = fishs[fishNum];
+            var place = Math.random()*(canvas.height - fishIndex.h);
+            var fish = new Fish(0,0,fishIndex.img,fishIndex.w,fishIndex.h,-fishIndex.w,place,fishIndex.w,fishIndex.h,fishIndex.m);
+            fishArray.push(fish);
+        }
+        for (var i = 0; i < fishArray.length; i++) {
+            if(isHas == false){
+                fishArray[i].draw();
+            }else{
+                fishArray.splice(i,1);
+            }
+        }
+        for (var i = 0; i < bulletArr.length; i++) {
+          bulletArr[i].draw();
+        }
+        for(var i = 0; i < fishArray.length; i++){
+            for(var j = 0; j < bulletArr.length; j++){
+                if(bulletArr[j].x <= fishArray[i].x1 + fishArray[i].w1 && bulletArr[j].x + bulletArr[j].w >= fishArray[i].x1 && bulletArr[j].y <=  fishArray[i].y1 + fishArray[i].h1 && bulletArr[j].y + bulletArr[j].h >= fishArray[i].y1){
+                    var webyu = new Webyu( "images/web"+turretIndex+".png",bulletArr[j].x-40 ,bulletArr[j].y-50,100 + turretIndex * 10,100 + turretIndex * 10);
+                    webyu.draw();
+                    bulletArr.splice(j,1);
+                    if(Math.random() > 0.3){
+                        fishArray[i].isDie = true;
+                    }
+                }
+            }
+        }
+        bot.draw();
+        energy.draw();
+        turret.draw();
+        turretAdd.draw();
+        turretLower.draw();
+        window.requestAnimationFrame(animate)
+    }
+    animate();
+    function deg(n){
+        return n * Math.PI / 180;
+    }
+
+    function odds(num){
+        if(num < 20 && num >= 0){ //20%
+            return 0;
+        }else if(num < 35 && num > 19){ //15%
+            return 1;
+        }else if(num < 47 && num > 34){ //12%
+            return 2;
+        }else if(num < 57 && num > 46){ //10%
+            return 3;
+        }else if(num < 65 && num > 56){ //8%
+            return 4;
+        }else if(num < 73 && num > 64){ //8%
+            return 5;
+        }else if(num < 80 && num > 72){ //7%
+            return 6;
+        }else if(num < 87 && num > 79){ //7%
+            return 7;
+        }else if(num < 92 && num > 86){ //5%
+            return 8;
+        }else if(num < 97 && num > 91){ //5%
+            return 9;
+        }else if(num < 99 && num > 96){ //2%
+            return 10;
+        }else if(num < 100 && num > 98){ //1%
+            return 11;
+        }
+    }
+</script>
+</html>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
