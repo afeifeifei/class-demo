@@ -14,46 +14,7 @@
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
   <component name="FileEditorManager">
-    <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/js-demo/2-x-02/人物移动.html">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="1403">
-              <caret line="61" column="13" selection-start-line="61" selection-start-column="13" selection-end-line="61" selection-end-column="13" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/js-demo/2-x-02/正则表单验证.html">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="575">
-              <caret line="106" column="23" selection-start-line="106" selection-start-column="23" selection-end-line="106" selection-end-column="23" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/js-demo/2-x-02/img/down.png">
-          <provider selected="true" editor-type-id="images" />
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/js-demo/2-x-02/img/left.png">
-          <provider selected="true" editor-type-id="images" />
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/js-demo/2-x-02/img/right.png">
-          <provider selected="true" editor-type-id="images" />
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/js-demo/2-x-02/img/up.png">
-          <provider selected="true" editor-type-id="images" />
-        </entry>
-      </file>
-    </leaf>
+    <leaf />
   </component>
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
@@ -101,8 +62,8 @@
   </component>
   <component name="ProjectFrameBounds">
     <option name="x" value="175" />
-    <option name="y" value="87" />
-    <option name="width" value="1336" />
+    <option name="y" value="99" />
+    <option name="width" value="1001" />
     <option name="height" value="999" />
   </component>
   <component name="ProjectLevelVcsManager" settingsEditedManually="true">
@@ -113,7 +74,6 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -121,21 +81,11 @@
               <item name="class-demo" type="b2602c69:ProjectViewProjectNode" />
               <item name="class-demo" type="462c0819:PsiDirectoryNode" />
             </path>
-            <path>
-              <item name="class-demo" type="b2602c69:ProjectViewProjectNode" />
-              <item name="class-demo" type="462c0819:PsiDirectoryNode" />
-              <item name="js-demo" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="class-demo" type="b2602c69:ProjectViewProjectNode" />
-              <item name="class-demo" type="462c0819:PsiDirectoryNode" />
-              <item name="js-demo" type="462c0819:PsiDirectoryNode" />
-              <item name="2-x-02" type="462c0819:PsiDirectoryNode" />
-            </path>
           </expand>
           <select />
         </subPane>
       </pane>
+      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -152,19 +102,19 @@
     <property name="settings.editor.selected.configurable" value="preferences.fileTypes" />
   </component>
   <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="E:\work\WebstormProjects\class-demo\js-demo" />
+      <recent name="F:\WebstormProjects\class-demo\js-demo\2-x-02" />
+      <recent name="F:\WebstormProjects\class-demo\js-demo\2-x-02\img" />
+      <recent name="F:\WebstormProjects\class-demo\js-demo\2-x-01" />
+      <recent name="F:\WebstormProjects\class-demo\js-demo\2-10-01" />
+    </key>
     <key name="MoveFile.RECENT_KEYS">
       <recent name="F:\WebstormProjects\class-demo\js-demo\2-03-02" />
       <recent name="F:\WebstormProjects\class-demo\js-demo" />
       <recent name="F:\WebstormProjects\class-demo\js-demo\2-03-03" />
       <recent name="F:\WebstormProjects\class-demo\中序遍历" />
       <recent name="C:\Users\Shinelon\Desktop\class-demo\js-demo\2-x-01" />
-    </key>
-    <key name="CopyFile.RECENT_KEYS">
-      <recent name="F:\WebstormProjects\class-demo\js-demo\2-x-02" />
-      <recent name="F:\WebstormProjects\class-demo\js-demo\2-x-02\img" />
-      <recent name="F:\WebstormProjects\class-demo\js-demo\2-x-01" />
-      <recent name="F:\WebstormProjects\class-demo\js-demo\2-10-01" />
-      <recent name="F:\WebstormProjects\class-demo\js-demo\2-08-05" />
     </key>
   </component>
   <component name="RunDashboard">
@@ -229,7 +179,8 @@
       <workItem from="1557555142179" duration="3000" />
       <workItem from="1557555182135" duration="2878000" />
       <workItem from="1557820381413" duration="1902000" />
-      <workItem from="1562227294623" duration="598000" />
+      <workItem from="1562227294623" duration="1694000" />
+      <workItem from="1562943357558" duration="487000" />
     </task>
     <task id="LOCAL-00001" summary="哈哈哈">
       <created>1517901502615</created>
@@ -553,17 +504,23 @@
       <option name="project" value="LOCAL" />
       <updated>1557820462905</updated>
     </task>
-    <option name="localTasksCounter" value="47" />
+    <task id="LOCAL-00047" summary="作业案例">
+      <created>1562228141887</created>
+      <option name="number" value="00047" />
+      <option name="presentableId" value="LOCAL-00047" />
+      <option name="project" value="LOCAL" />
+      <updated>1562228141887</updated>
+    </task>
+    <option name="localTasksCounter" value="48" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="66551000" />
+    <option name="totallyTimeSpent" value="68134000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="175" y="87" width="1336" height="999" extended-state="0" />
-    <editor active="true" />
+    <frame x="175" y="328" width="1336" height="999" extended-state="0" />
     <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.10939907" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.10909091" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.2496329" />
       <window_info id="Favorites" order="2" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
@@ -609,63 +566,6 @@
     <option name="LAST_COMMIT_MESSAGE" value="作业案例" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/js-demo/2-03/2-03-01/index.html" />
-    <entry file="file://$PROJECT_DIR$/js-demo/2-06-02/index.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="650">
-          <caret line="25" column="14" selection-start-line="25" selection-start-column="14" selection-end-line="25" selection-end-column="14" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/js-demo/2-06-03/index.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1664">
-          <caret line="64" column="16" selection-start-line="64" selection-start-column="16" selection-end-line="64" selection-end-column="16" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/js-demo/2-07-06/index.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="390">
-          <caret line="15" column="28" selection-start-line="15" selection-start-column="28" selection-end-line="15" selection-end-column="28" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/MVX/01-demo.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="858">
-          <caret line="33" column="18" selection-end-line="83" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/MVX/02-demo.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="2184">
-          <caret line="84" column="29" selection-start-line="84" selection-start-column="29" selection-end-line="84" selection-end-column="29" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/MVX/04-MVP.html" />
-    <entry file="file://$PROJECT_DIR$/MVX/03-demo.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="2678">
-          <caret line="103" column="34" selection-start-line="103" selection-start-column="34" selection-end-line="103" selection-end-column="34" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/MVX/04-MVVM.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="234">
-          <caret line="9" column="7" selection-start-line="9" selection-start-column="7" selection-end-line="9" selection-end-column="7" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/img/qqqrcode1.jpg">
-      <provider selected="true" editor-type-id="images" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/img/dont worry.jpg">
-      <provider selected="true" editor-type-id="images" />
-    </entry>
     <entry file="file://$PROJECT_DIR$/img/almost.png">
       <provider selected="true" editor-type-id="images" />
     </entry>
@@ -900,6 +800,52 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/js-demo/2-x-02/img/up.png">
       <provider selected="true" editor-type-id="images" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/js-demo/2-canvas/canvas炫酷时钟.html" />
+    <entry file="file://$PROJECT_DIR$/js-demo/2-canvas/cube.html" />
+    <entry file="file://$PROJECT_DIR$/js-demo/2-canvas/时间数字跳动.html" />
+    <entry file="file://$PROJECT_DIR$/js-demo/2-canvas/6-雷达扫描/1-雷达扫描.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="279">
+          <caret line="76" column="8" selection-start-line="76" selection-start-column="8" selection-end-line="76" selection-end-column="8" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/js-demo/2-canvas/5-雨滴+黑客帝国浏览雨/2-黑客入侵.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="161">
+          <caret line="7" column="48" lean-forward="true" selection-start-line="7" selection-start-column="48" selection-end-line="7" selection-end-column="48" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/js-demo/2-canvas/5-雨滴+黑客帝国浏览雨/1-雨滴.html">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/js-demo/2-canvas/4-俄罗斯方块游戏开发/index.html">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/js-demo/2-canvas/3-蜘蛛网/2-蜘蛛网.html">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/js-demo/2-canvas/2-猫头鹰时钟/index.html">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/js-demo/2-canvas/1-三维数组数字时钟/1-时钟.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="322">
+          <caret line="14" column="9" selection-start-line="14" selection-start-column="9" selection-end-line="14" selection-end-column="9" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/js-demo/2-canvas/start.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="920">
+          <caret line="40" column="49" selection-start-line="40" selection-start-column="49" selection-end-line="40" selection-end-column="49" />
+          <folding>
+            <element signature="n#style#0;n#canvas#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+          </folding>
+        </state>
+      </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/js-demo/2-x-02/正则表单验证.html">
       <provider selected="true" editor-type-id="text-editor">
