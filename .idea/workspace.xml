@@ -2,7 +2,6 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="9b9ae43b-79ed-4986-8af0-25250cc5f58c" name="Default" comment="作业案例">
-      <change afterPath="$PROJECT_DIR$/git/commit.png" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/.tmp/" />
@@ -21,8 +20,13 @@
           <provider selected="true" editor-type-id="images" />
         </entry>
       </file>
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/git/add commit.png">
+          <provider selected="true" editor-type-id="images" />
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/git/change1.png">
           <provider selected="true" editor-type-id="images" />
         </entry>
       </file>
@@ -198,21 +202,7 @@
       <workItem from="1557820381413" duration="1902000" />
       <workItem from="1562227294623" duration="1694000" />
       <workItem from="1562943357558" duration="1797000" />
-      <workItem from="1562997047332" duration="2231000" />
-    </task>
-    <task id="LOCAL-00003" summary="03-30">
-      <created>1522393864048</created>
-      <option name="number" value="00003" />
-      <option name="presentableId" value="LOCAL-00003" />
-      <option name="project" value="LOCAL" />
-      <updated>1522393864048</updated>
-    </task>
-    <task id="LOCAL-00004" summary="03-30 - 1">
-      <created>1522394831763</created>
-      <option name="number" value="00004" />
-      <option name="presentableId" value="LOCAL-00004" />
-      <option name="project" value="LOCAL" />
-      <updated>1522394831763</updated>
+      <workItem from="1562997047332" duration="3131000" />
     </task>
     <task id="LOCAL-00005" summary="03-30 - 1">
       <created>1522395081160</created>
@@ -543,11 +533,25 @@
       <option name="project" value="LOCAL" />
       <updated>1563022325902</updated>
     </task>
-    <option name="localTasksCounter" value="52" />
+    <task id="LOCAL-00052" summary="作业案例">
+      <created>1563022754338</created>
+      <option name="number" value="00052" />
+      <option name="presentableId" value="LOCAL-00052" />
+      <option name="project" value="LOCAL" />
+      <updated>1563022754338</updated>
+    </task>
+    <task id="LOCAL-00053" summary="作业案例">
+      <created>1563023505139</created>
+      <option name="number" value="00053" />
+      <option name="presentableId" value="LOCAL-00053" />
+      <option name="project" value="LOCAL" />
+      <updated>1563023505139</updated>
+    </task>
+    <option name="localTasksCounter" value="54" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="71675000" />
+    <option name="totallyTimeSpent" value="72575000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="782" y="27" width="1001" height="999" extended-state="0" />
@@ -598,9 +602,6 @@
     <option name="LAST_COMMIT_MESSAGE" value="作业案例" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/数据结构/哈希表.png">
-      <provider selected="true" editor-type-id="images" />
-    </entry>
     <entry file="file://$PROJECT_DIR$/数据结构/树.png">
       <provider selected="true" editor-type-id="images" />
     </entry>
@@ -884,6 +885,9 @@
       <provider selected="true" editor-type-id="images" />
     </entry>
     <entry file="file://$PROJECT_DIR$/git/add commit.png">
+      <provider selected="true" editor-type-id="images" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/git/change1.png">
       <provider selected="true" editor-type-id="images" />
     </entry>
   </component>
