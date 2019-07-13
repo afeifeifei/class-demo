@@ -14,7 +14,13 @@
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
   <component name="FileEditorManager">
-    <leaf />
+    <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/git/普通的文件版本控制.png">
+          <provider selected="true" editor-type-id="images" />
+        </entry>
+      </file>
+    </leaf>
   </component>
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
@@ -61,8 +67,8 @@
     <auto-save>true</auto-save>
   </component>
   <component name="ProjectFrameBounds">
-    <option name="x" value="175" />
-    <option name="y" value="99" />
+    <option name="x" value="782" />
+    <option name="y" value="27" />
     <option name="width" value="1001" />
     <option name="height" value="999" />
   </component>
@@ -81,6 +87,11 @@
               <item name="class-demo" type="b2602c69:ProjectViewProjectNode" />
               <item name="class-demo" type="462c0819:PsiDirectoryNode" />
             </path>
+            <path>
+              <item name="class-demo" type="b2602c69:ProjectViewProjectNode" />
+              <item name="class-demo" type="462c0819:PsiDirectoryNode" />
+              <item name="git" type="462c0819:PsiDirectoryNode" />
+            </path>
           </expand>
           <select />
         </subPane>
@@ -94,7 +105,7 @@
     <property name="JavaScriptWeakerCompletionTypeGuess" value="true" />
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/js-demo" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/git" />
     <property name="node.js.detected.package.prettier" value="true" />
     <property name="node.js.path.for.package.prettier" value="project" />
     <property name="node.js.selected.package.prettier" value="" />
@@ -102,19 +113,19 @@
     <property name="settings.editor.selected.configurable" value="preferences.fileTypes" />
   </component>
   <component name="RecentsManager">
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="E:\work\WebstormProjects\class-demo\git" />
+      <recent name="F:\WebstormProjects\class-demo\js-demo\2-03-02" />
+      <recent name="F:\WebstormProjects\class-demo\js-demo" />
+      <recent name="F:\WebstormProjects\class-demo\js-demo\2-03-03" />
+      <recent name="F:\WebstormProjects\class-demo\中序遍历" />
+    </key>
     <key name="CopyFile.RECENT_KEYS">
       <recent name="E:\work\WebstormProjects\class-demo\js-demo" />
       <recent name="F:\WebstormProjects\class-demo\js-demo\2-x-02" />
       <recent name="F:\WebstormProjects\class-demo\js-demo\2-x-02\img" />
       <recent name="F:\WebstormProjects\class-demo\js-demo\2-x-01" />
       <recent name="F:\WebstormProjects\class-demo\js-demo\2-10-01" />
-    </key>
-    <key name="MoveFile.RECENT_KEYS">
-      <recent name="F:\WebstormProjects\class-demo\js-demo\2-03-02" />
-      <recent name="F:\WebstormProjects\class-demo\js-demo" />
-      <recent name="F:\WebstormProjects\class-demo\js-demo\2-03-03" />
-      <recent name="F:\WebstormProjects\class-demo\中序遍历" />
-      <recent name="C:\Users\Shinelon\Desktop\class-demo\js-demo\2-x-01" />
     </key>
   </component>
   <component name="RunDashboard">
@@ -180,7 +191,8 @@
       <workItem from="1557555182135" duration="2878000" />
       <workItem from="1557820381413" duration="1902000" />
       <workItem from="1562227294623" duration="1694000" />
-      <workItem from="1562943357558" duration="487000" />
+      <workItem from="1562943357558" duration="1797000" />
+      <workItem from="1562997047332" duration="705000" />
     </task>
     <task id="LOCAL-00001" summary="哈哈哈">
       <created>1517901502615</created>
@@ -511,16 +523,23 @@
       <option name="project" value="LOCAL" />
       <updated>1562228141887</updated>
     </task>
-    <option name="localTasksCounter" value="48" />
+    <task id="LOCAL-00048" summary="作业案例">
+      <created>1562943931125</created>
+      <option name="number" value="00048" />
+      <option name="presentableId" value="LOCAL-00048" />
+      <option name="project" value="LOCAL" />
+      <updated>1562943931125</updated>
+    </task>
+    <option name="localTasksCounter" value="49" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="68134000" />
+    <option name="totallyTimeSpent" value="70149000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="175" y="328" width="1336" height="999" extended-state="0" />
+    <frame x="782" y="27" width="1001" height="999" extended-state="0" />
     <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.10909091" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.1461929" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.2496329" />
       <window_info id="Favorites" order="2" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
@@ -566,9 +585,6 @@
     <option name="LAST_COMMIT_MESSAGE" value="作业案例" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/img/almost.png">
-      <provider selected="true" editor-type-id="images" />
-    </entry>
     <entry file="file://$PROJECT_DIR$/img/afei.png">
       <provider selected="true" editor-type-id="images" />
     </entry>
@@ -853,6 +869,9 @@
           <caret line="106" column="23" selection-start-line="106" selection-start-column="23" selection-end-line="106" selection-end-column="23" />
         </state>
       </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/git/普通的文件版本控制.png">
+      <provider selected="true" editor-type-id="images" />
     </entry>
   </component>
 </project>
