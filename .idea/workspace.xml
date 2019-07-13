@@ -1,9 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="9b9ae43b-79ed-4986-8af0-25250cc5f58c" name="Default" comment="作业案例">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-    </list>
+    <list default="true" id="9b9ae43b-79ed-4986-8af0-25250cc5f58c" name="Default" comment="作业案例" />
     <ignored path="$PROJECT_DIR$/.tmp/" />
     <ignored path="$PROJECT_DIR$/temp/" />
     <ignored path="$PROJECT_DIR$/tmp/" />
@@ -113,19 +111,19 @@
     <property name="settings.editor.selected.configurable" value="preferences.fileTypes" />
   </component>
   <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="E:\work\WebstormProjects\class-demo\git" />
+      <recent name="E:\work\WebstormProjects\class-demo\js-demo" />
+      <recent name="F:\WebstormProjects\class-demo\js-demo\2-x-02" />
+      <recent name="F:\WebstormProjects\class-demo\js-demo\2-x-02\img" />
+      <recent name="F:\WebstormProjects\class-demo\js-demo\2-x-01" />
+    </key>
     <key name="MoveFile.RECENT_KEYS">
       <recent name="E:\work\WebstormProjects\class-demo\git" />
       <recent name="F:\WebstormProjects\class-demo\js-demo\2-03-02" />
       <recent name="F:\WebstormProjects\class-demo\js-demo" />
       <recent name="F:\WebstormProjects\class-demo\js-demo\2-03-03" />
       <recent name="F:\WebstormProjects\class-demo\中序遍历" />
-    </key>
-    <key name="CopyFile.RECENT_KEYS">
-      <recent name="E:\work\WebstormProjects\class-demo\js-demo" />
-      <recent name="F:\WebstormProjects\class-demo\js-demo\2-x-02" />
-      <recent name="F:\WebstormProjects\class-demo\js-demo\2-x-02\img" />
-      <recent name="F:\WebstormProjects\class-demo\js-demo\2-x-01" />
-      <recent name="F:\WebstormProjects\class-demo\js-demo\2-10-01" />
     </key>
   </component>
   <component name="RunDashboard">
@@ -192,7 +190,7 @@
       <workItem from="1557820381413" duration="1902000" />
       <workItem from="1562227294623" duration="1694000" />
       <workItem from="1562943357558" duration="1797000" />
-      <workItem from="1562997047332" duration="705000" />
+      <workItem from="1562997047332" duration="1356000" />
     </task>
     <task id="LOCAL-00001" summary="哈哈哈">
       <created>1517901502615</created>
@@ -530,11 +528,18 @@
       <option name="project" value="LOCAL" />
       <updated>1562943931125</updated>
     </task>
-    <option name="localTasksCounter" value="49" />
+    <task id="LOCAL-00049" summary="作业案例">
+      <created>1563020588387</created>
+      <option name="number" value="00049" />
+      <option name="presentableId" value="LOCAL-00049" />
+      <option name="project" value="LOCAL" />
+      <updated>1563020588387</updated>
+    </task>
+    <option name="localTasksCounter" value="50" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="70149000" />
+    <option name="totallyTimeSpent" value="70800000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="782" y="27" width="1001" height="999" extended-state="0" />
