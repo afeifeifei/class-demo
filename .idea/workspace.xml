@@ -1,9 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="9b9ae43b-79ed-4986-8af0-25250cc5f58c" name="Default" comment="作业案例">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-    </list>
+    <list default="true" id="9b9ae43b-79ed-4986-8af0-25250cc5f58c" name="Default" comment="作业案例" />
     <ignored path="$PROJECT_DIR$/.tmp/" />
     <ignored path="$PROJECT_DIR$/temp/" />
     <ignored path="$PROJECT_DIR$/tmp/" />
@@ -25,9 +23,36 @@
           <provider selected="true" editor-type-id="images" />
         </entry>
       </file>
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/git/change1.png">
           <provider selected="true" editor-type-id="images" />
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/MVX/01-demo.html">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="156">
+              <caret line="44" column="48" selection-start-line="44" selection-start-column="48" selection-end-line="44" selection-end-column="48" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/MVX/02-demo.html">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="460">
+              <caret line="77" column="20" selection-start-line="77" selection-start-column="20" selection-end-line="77" selection-end-column="20" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/MVX/03-demo.html">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="529">
+              <caret line="113" lean-forward="true" selection-start-line="113" selection-end-line="113" />
+            </state>
+          </provider>
         </entry>
       </file>
     </leaf>
@@ -101,6 +126,11 @@
               <item name="class-demo" type="b2602c69:ProjectViewProjectNode" />
               <item name="class-demo" type="462c0819:PsiDirectoryNode" />
               <item name="git" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="class-demo" type="b2602c69:ProjectViewProjectNode" />
+              <item name="class-demo" type="462c0819:PsiDirectoryNode" />
+              <item name="MVX" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
@@ -202,14 +232,7 @@
       <workItem from="1557820381413" duration="1902000" />
       <workItem from="1562227294623" duration="1694000" />
       <workItem from="1562943357558" duration="1797000" />
-      <workItem from="1562997047332" duration="4597000" />
-    </task>
-    <task id="LOCAL-00008" summary="03-30 - 1">
-      <created>1522396211571</created>
-      <option name="number" value="00008" />
-      <option name="presentableId" value="LOCAL-00008" />
-      <option name="project" value="LOCAL" />
-      <updated>1522396211571</updated>
+      <workItem from="1562997047332" duration="7403000" />
     </task>
     <task id="LOCAL-00009" summary="03-30 - 1">
       <created>1522485253932</created>
@@ -547,11 +570,18 @@
       <option name="project" value="LOCAL" />
       <updated>1563025256366</updated>
     </task>
-    <option name="localTasksCounter" value="57" />
+    <task id="LOCAL-00057" summary="作业案例">
+      <created>1563026077307</created>
+      <option name="number" value="00057" />
+      <option name="presentableId" value="LOCAL-00057" />
+      <option name="project" value="LOCAL" />
+      <updated>1563026077307</updated>
+    </task>
+    <option name="localTasksCounter" value="58" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="74041000" />
+    <option name="totallyTimeSpent" value="76847000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="782" y="28" width="1001" height="998" extended-state="0" />
@@ -603,15 +633,6 @@
     <option name="LAST_COMMIT_MESSAGE" value="作业案例" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/数据结构/树.png">
-      <provider selected="true" editor-type-id="images" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/img/wx.jpg">
-      <provider selected="true" editor-type-id="images" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/数据结构/中序遍历.jpg">
-      <provider selected="true" editor-type-id="images" />
-    </entry>
     <entry file="file://$PROJECT_DIR$/js-demo/2-01-01/s.html" />
     <entry file="file://$PROJECT_DIR$/js-demo/2-03-03/切换背景色.html">
       <provider selected="true" editor-type-id="text-editor">
@@ -890,6 +911,27 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/git/change1.png">
       <provider selected="true" editor-type-id="images" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/MVX/01-demo.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="156">
+          <caret line="44" column="48" selection-start-line="44" selection-start-column="48" selection-end-line="44" selection-end-column="48" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/MVX/02-demo.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="460">
+          <caret line="77" column="20" selection-start-line="77" selection-start-column="20" selection-end-line="77" selection-end-column="20" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/MVX/03-demo.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="529">
+          <caret line="113" lean-forward="true" selection-start-line="113" selection-end-line="113" />
+        </state>
+      </provider>
     </entry>
   </component>
 </project>
