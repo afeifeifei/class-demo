@@ -2,8 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="9b9ae43b-79ed-4986-8af0-25250cc5f58c" name="Default" comment="作业案例">
-      <change afterPath="$PROJECT_DIR$/git/branch2.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/git/branch4.png" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/.tmp/" />
     <ignored path="$PROJECT_DIR$/temp/" />
@@ -41,8 +40,13 @@
           <provider selected="true" editor-type-id="images" />
         </entry>
       </file>
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/git/2.5add3.png">
+          <provider selected="true" editor-type-id="images" />
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/git/branch2.png">
           <provider selected="true" editor-type-id="images" />
         </entry>
       </file>
@@ -238,14 +242,7 @@
       <workItem from="1563170403285" duration="1384000" />
       <workItem from="1563177758554" duration="3660000" />
       <workItem from="1563257400911" duration="1330000" />
-      <workItem from="1563345290209" duration="13385000" />
-    </task>
-    <task id="LOCAL-00035" summary="作业案例">
-      <created>1556954879357</created>
-      <option name="number" value="00035" />
-      <option name="presentableId" value="LOCAL-00035" />
-      <option name="project" value="LOCAL" />
-      <updated>1556954879357</updated>
+      <workItem from="1563345290209" duration="13728000" />
     </task>
     <task id="LOCAL-00036" summary="作业案例">
       <created>1556956215584</created>
@@ -583,14 +580,22 @@
       <option name="project" value="LOCAL" />
       <updated>1563376308920</updated>
     </task>
-    <option name="localTasksCounter" value="84" />
+    <task id="LOCAL-00084" summary="作业案例">
+      <created>1563376611577</created>
+      <option name="number" value="00084" />
+      <option name="presentableId" value="LOCAL-00084" />
+      <option name="project" value="LOCAL" />
+      <updated>1563376611577</updated>
+    </task>
+    <option name="localTasksCounter" value="85" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="96606000" />
+    <option name="totallyTimeSpent" value="96949000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="847" y="43" width="1001" height="998" extended-state="0" />
+    <editor active="true" />
     <layout>
       <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.14537902" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.2496329" />
@@ -638,13 +643,6 @@
     <option name="LAST_COMMIT_MESSAGE" value="作业案例" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/js-demo/2-07-05/index.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="483">
-          <caret line="72" column="28" selection-start-line="72" selection-start-column="28" selection-end-line="72" selection-end-column="28" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/js-demo/2-07-01/九九乘法表.html">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="414">
@@ -883,6 +881,9 @@
       <provider selected="true" editor-type-id="images" />
     </entry>
     <entry file="file://$PROJECT_DIR$/git/2.5add3.png">
+      <provider selected="true" editor-type-id="images" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/git/branch2.png">
       <provider selected="true" editor-type-id="images" />
     </entry>
   </component>
