@@ -2,7 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="9b9ae43b-79ed-4986-8af0-25250cc5f58c" name="Default" comment="作业案例">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/git/revert2.png" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/.tmp/" />
     <ignored path="$PROJECT_DIR$/temp/" />
@@ -43,6 +43,11 @@
         <option value="HTML File" />
       </list>
     </option>
+  </component>
+  <component name="FindInProjectRecents">
+    <findStrings>
+      <find>作业案例</find>
+    </findStrings>
   </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
@@ -134,19 +139,19 @@
     <property name="settings.editor.selected.configurable" value="preferences.fileTypes" />
   </component>
   <component name="RecentsManager">
-    <key name="CopyFile.RECENT_KEYS">
-      <recent name="E:\work\WebstormProjects\class-demo\git" />
-      <recent name="E:\work\WebstormProjects\class-demo\js-demo" />
-      <recent name="F:\WebstormProjects\class-demo\js-demo\2-x-02" />
-      <recent name="F:\WebstormProjects\class-demo\js-demo\2-x-02\img" />
-      <recent name="F:\WebstormProjects\class-demo\js-demo\2-x-01" />
-    </key>
     <key name="MoveFile.RECENT_KEYS">
       <recent name="E:\work\WebstormProjects\class-demo\git" />
       <recent name="F:\WebstormProjects\class-demo\js-demo\2-03-02" />
       <recent name="F:\WebstormProjects\class-demo\js-demo" />
       <recent name="F:\WebstormProjects\class-demo\js-demo\2-03-03" />
       <recent name="F:\WebstormProjects\class-demo\中序遍历" />
+    </key>
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="E:\work\WebstormProjects\class-demo\git" />
+      <recent name="E:\work\WebstormProjects\class-demo\js-demo" />
+      <recent name="F:\WebstormProjects\class-demo\js-demo\2-x-02" />
+      <recent name="F:\WebstormProjects\class-demo\js-demo\2-x-02\img" />
+      <recent name="F:\WebstormProjects\class-demo\js-demo\2-x-01" />
     </key>
   </component>
   <component name="RunDashboard">
@@ -217,14 +222,7 @@
       <workItem from="1563170403285" duration="1384000" />
       <workItem from="1563177758554" duration="3660000" />
       <workItem from="1563257400911" duration="1330000" />
-      <workItem from="1563345290209" duration="1197000" />
-    </task>
-    <task id="LOCAL-00018" summary="08-17 MVVM">
-      <created>1534493907822</created>
-      <option name="number" value="00018" />
-      <option name="presentableId" value="LOCAL-00018" />
-      <option name="project" value="LOCAL" />
-      <updated>1534493907822</updated>
+      <workItem from="1563345290209" duration="1825000" />
     </task>
     <task id="LOCAL-00019" summary="08-24 排序图片">
       <created>1535100561192</created>
@@ -562,15 +560,21 @@
       <option name="project" value="LOCAL" />
       <updated>1563180016114</updated>
     </task>
-    <option name="localTasksCounter" value="67" />
+    <task id="LOCAL-00067" summary="作业案例">
+      <created>1563347036307</created>
+      <option name="number" value="00067" />
+      <option name="presentableId" value="LOCAL-00067" />
+      <option name="project" value="LOCAL" />
+      <updated>1563347036307</updated>
+    </task>
+    <option name="localTasksCounter" value="68" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="84418000" />
+    <option name="totallyTimeSpent" value="85046000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="796" y="52" width="1001" height="998" extended-state="0" />
-    <editor active="true" />
     <layout>
       <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.14537902" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.2496329" />
