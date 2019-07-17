@@ -2,7 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="9b9ae43b-79ed-4986-8af0-25250cc5f58c" name="Default" comment="作业案例">
-      <change afterPath="$PROJECT_DIR$/git/status4.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/git/rm2.png" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/.tmp/" />
@@ -41,12 +41,12 @@
           <provider selected="true" editor-type-id="images" />
         </entry>
       </file>
-      <file pinned="false" current-in-tab="false">
+      <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/git/2.5add3.png">
           <provider selected="true" editor-type-id="images" />
         </entry>
       </file>
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/git/2.5add4.png">
           <provider selected="true" editor-type-id="images" />
         </entry>
@@ -104,8 +104,8 @@
     <auto-save>true</auto-save>
   </component>
   <component name="ProjectFrameBounds">
-    <option name="x" value="796" />
-    <option name="y" value="52" />
+    <option name="x" value="833" />
+    <option name="y" value="38" />
     <option name="width" value="1001" />
     <option name="height" value="998" />
   </component>
@@ -152,7 +152,7 @@
     <property name="node.js.path.for.package.prettier" value="project" />
     <property name="node.js.selected.package.prettier" value="" />
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
-    <property name="settings.editor.selected.configurable" value="preferences.fileTypes" />
+    <property name="settings.editor.selected.configurable" value="Settings.JavaScript" />
   </component>
   <component name="RecentsManager">
     <key name="MoveFile.RECENT_KEYS">
@@ -238,21 +238,7 @@
       <workItem from="1563170403285" duration="1384000" />
       <workItem from="1563177758554" duration="3660000" />
       <workItem from="1563257400911" duration="1330000" />
-      <workItem from="1563345290209" duration="6420000" />
-    </task>
-    <task id="LOCAL-00025" summary="二维码更新">
-      <created>1536136922127</created>
-      <option name="number" value="00025" />
-      <option name="presentableId" value="LOCAL-00025" />
-      <option name="project" value="LOCAL" />
-      <updated>1536136922127</updated>
-    </task>
-    <task id="LOCAL-00026" summary="新加入">
-      <created>1540295512505</created>
-      <option name="number" value="00026" />
-      <option name="presentableId" value="LOCAL-00026" />
-      <option name="project" value="LOCAL" />
-      <updated>1540295512505</updated>
+      <workItem from="1563345290209" duration="8105000" />
     </task>
     <task id="LOCAL-00027" summary="数据结构">
       <created>1548662491343</created>
@@ -583,15 +569,28 @@
       <option name="project" value="LOCAL" />
       <updated>1563354077540</updated>
     </task>
-    <option name="localTasksCounter" value="74" />
+    <task id="LOCAL-00074" summary="作业案例">
+      <created>1563365427525</created>
+      <option name="number" value="00074" />
+      <option name="presentableId" value="LOCAL-00074" />
+      <option name="project" value="LOCAL" />
+      <updated>1563365427525</updated>
+    </task>
+    <task id="LOCAL-00075" summary="作业案例">
+      <created>1563368238345</created>
+      <option name="number" value="00075" />
+      <option name="presentableId" value="LOCAL-00075" />
+      <option name="project" value="LOCAL" />
+      <updated>1563368238345</updated>
+    </task>
+    <option name="localTasksCounter" value="76" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="89641000" />
+    <option name="totallyTimeSpent" value="91326000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="796" y="52" width="1001" height="998" extended-state="0" />
-    <editor active="true" />
+    <frame x="833" y="38" width="1001" height="998" extended-state="0" />
     <layout>
       <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.14537902" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.2496329" />
@@ -877,13 +876,13 @@
     <entry file="file://$PROJECT_DIR$/git/2.5add1.png">
       <provider selected="true" editor-type-id="images" />
     </entry>
+    <entry file="file://$PROJECT_DIR$/git/2.5add4.png">
+      <provider selected="true" editor-type-id="images" />
+    </entry>
     <entry file="file://$PROJECT_DIR$/git/2.5add2.png">
       <provider selected="true" editor-type-id="images" />
     </entry>
     <entry file="file://$PROJECT_DIR$/git/2.5add3.png">
-      <provider selected="true" editor-type-id="images" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/git/2.5add4.png">
       <provider selected="true" editor-type-id="images" />
     </entry>
   </component>
