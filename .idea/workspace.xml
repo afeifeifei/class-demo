@@ -1,7 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="9b9ae43b-79ed-4986-8af0-25250cc5f58c" name="Default" comment="作业案例" />
+    <list default="true" id="9b9ae43b-79ed-4986-8af0-25250cc5f58c" name="Default" comment="作业案例">
+      <change afterPath="$PROJECT_DIR$/git/2.5add3.png" afterDir="false" />
+    </list>
     <ignored path="$PROJECT_DIR$/.tmp/" />
     <ignored path="$PROJECT_DIR$/temp/" />
     <ignored path="$PROJECT_DIR$/tmp/" />
@@ -220,14 +222,7 @@
       <workItem from="1563170403285" duration="1384000" />
       <workItem from="1563177758554" duration="3660000" />
       <workItem from="1563257400911" duration="1330000" />
-      <workItem from="1563345290209" duration="3992000" />
-    </task>
-    <task id="LOCAL-00022" summary="08-24 修改位置">
-      <created>1536135526482</created>
-      <option name="number" value="00022" />
-      <option name="presentableId" value="LOCAL-00022" />
-      <option name="project" value="LOCAL" />
-      <updated>1536135526482</updated>
+      <workItem from="1563345290209" duration="4331000" />
     </task>
     <task id="LOCAL-00023" summary="二维码更新">
       <created>1536136095107</created>
@@ -565,11 +560,18 @@
       <option name="project" value="LOCAL" />
       <updated>1563351962335</updated>
     </task>
-    <option name="localTasksCounter" value="71" />
+    <task id="LOCAL-00071" summary="作业案例">
+      <created>1563353607499</created>
+      <option name="number" value="00071" />
+      <option name="presentableId" value="LOCAL-00071" />
+      <option name="project" value="LOCAL" />
+      <updated>1563353607499</updated>
+    </task>
+    <option name="localTasksCounter" value="72" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="87213000" />
+    <option name="totallyTimeSpent" value="87552000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="796" y="52" width="1001" height="998" extended-state="0" />
