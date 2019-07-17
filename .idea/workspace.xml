@@ -2,10 +2,9 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="9b9ae43b-79ed-4986-8af0-25250cc5f58c" name="Default" comment="作业案例">
-      <change afterPath="$PROJECT_DIR$/git/ssh.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/git/ssh2.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/git/ssh3.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/git/ssh4.png" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/git/ssh3.png" beforeDir="false" afterPath="$PROJECT_DIR$/git/ssh3.png" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/.tmp/" />
     <ignored path="$PROJECT_DIR$/temp/" />
@@ -240,14 +239,7 @@
       <workItem from="1563170403285" duration="1384000" />
       <workItem from="1563177758554" duration="3660000" />
       <workItem from="1563257400911" duration="1330000" />
-      <workItem from="1563345290209" duration="9934000" />
-    </task>
-    <task id="LOCAL-00029" summary="数据结构">
-      <created>1550068478241</created>
-      <option name="number" value="00029" />
-      <option name="presentableId" value="LOCAL-00029" />
-      <option name="project" value="LOCAL" />
-      <updated>1550068478241</updated>
+      <workItem from="1563345290209" duration="10547000" />
     </task>
     <task id="LOCAL-00030" summary="0429">
       <created>1556544072513</created>
@@ -585,15 +577,21 @@
       <option name="project" value="LOCAL" />
       <updated>1563368774688</updated>
     </task>
-    <option name="localTasksCounter" value="78" />
+    <task id="LOCAL-00078" summary="作业案例">
+      <created>1563371641752</created>
+      <option name="number" value="00078" />
+      <option name="presentableId" value="LOCAL-00078" />
+      <option name="project" value="LOCAL" />
+      <updated>1563371641752</updated>
+    </task>
+    <option name="localTasksCounter" value="79" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="93155000" />
+    <option name="totallyTimeSpent" value="93768000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="857" y="101" width="1001" height="998" extended-state="0" />
-    <editor active="true" />
     <layout>
       <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.14537902" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.2496329" />
