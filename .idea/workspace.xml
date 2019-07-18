@@ -1,9 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="9b9ae43b-79ed-4986-8af0-25250cc5f58c" name="Default" comment="作业案例">
-      <change afterPath="$PROJECT_DIR$/git/branch6.png" afterDir="false" />
-    </list>
+    <list default="true" id="9b9ae43b-79ed-4986-8af0-25250cc5f58c" name="Default" comment="作业案例" />
     <ignored path="$PROJECT_DIR$/.tmp/" />
     <ignored path="$PROJECT_DIR$/temp/" />
     <ignored path="$PROJECT_DIR$/tmp/" />
@@ -242,21 +240,7 @@
       <workItem from="1563170403285" duration="1384000" />
       <workItem from="1563177758554" duration="3660000" />
       <workItem from="1563257400911" duration="1330000" />
-      <workItem from="1563345290209" duration="13982000" />
-    </task>
-    <task id="LOCAL-00038" summary="作业案例">
-      <created>1556956351843</created>
-      <option name="number" value="00038" />
-      <option name="presentableId" value="LOCAL-00038" />
-      <option name="project" value="LOCAL" />
-      <updated>1556956351844</updated>
-    </task>
-    <task id="LOCAL-00039" summary="作业案例">
-      <created>1556957035892</created>
-      <option name="number" value="00039" />
-      <option name="presentableId" value="LOCAL-00039" />
-      <option name="project" value="LOCAL" />
-      <updated>1556957035892</updated>
+      <workItem from="1563345290209" duration="14308000" />
     </task>
     <task id="LOCAL-00040" summary="作业案例">
       <created>1556957258192</created>
@@ -587,11 +571,25 @@
       <option name="project" value="LOCAL" />
       <updated>1563377012236</updated>
     </task>
-    <option name="localTasksCounter" value="87" />
+    <task id="LOCAL-00087" summary="作业案例">
+      <created>1563377167312</created>
+      <option name="number" value="00087" />
+      <option name="presentableId" value="LOCAL-00087" />
+      <option name="project" value="LOCAL" />
+      <updated>1563377167312</updated>
+    </task>
+    <task id="LOCAL-00088" summary="作业案例">
+      <created>1563377329378</created>
+      <option name="number" value="00088" />
+      <option name="presentableId" value="LOCAL-00088" />
+      <option name="project" value="LOCAL" />
+      <updated>1563377329378</updated>
+    </task>
+    <option name="localTasksCounter" value="89" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="97203000" />
+    <option name="totallyTimeSpent" value="97529000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="847" y="43" width="1001" height="998" extended-state="0" />
