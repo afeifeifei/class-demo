@@ -1,7 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="9b9ae43b-79ed-4986-8af0-25250cc5f58c" name="Default" comment="作业案例" />
+    <list default="true" id="9b9ae43b-79ed-4986-8af0-25250cc5f58c" name="Default" comment="作业案例">
+      <change afterPath="$PROJECT_DIR$/git/merge2.png" afterDir="false" />
+    </list>
     <ignored path="$PROJECT_DIR$/.tmp/" />
     <ignored path="$PROJECT_DIR$/temp/" />
     <ignored path="$PROJECT_DIR$/tmp/" />
@@ -157,19 +159,19 @@
     <property name="settings.editor.selected.configurable" value="Settings.JavaScript" />
   </component>
   <component name="RecentsManager">
-    <key name="MoveFile.RECENT_KEYS">
-      <recent name="E:\work\WebstormProjects\class-demo\git" />
-      <recent name="F:\WebstormProjects\class-demo\js-demo\2-03-02" />
-      <recent name="F:\WebstormProjects\class-demo\js-demo" />
-      <recent name="F:\WebstormProjects\class-demo\js-demo\2-03-03" />
-      <recent name="F:\WebstormProjects\class-demo\中序遍历" />
-    </key>
     <key name="CopyFile.RECENT_KEYS">
       <recent name="E:\work\WebstormProjects\class-demo\git" />
       <recent name="E:\work\WebstormProjects\class-demo\js-demo" />
       <recent name="F:\WebstormProjects\class-demo\js-demo\2-x-02" />
       <recent name="F:\WebstormProjects\class-demo\js-demo\2-x-02\img" />
       <recent name="F:\WebstormProjects\class-demo\js-demo\2-x-01" />
+    </key>
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="E:\work\WebstormProjects\class-demo\git" />
+      <recent name="F:\WebstormProjects\class-demo\js-demo\2-03-02" />
+      <recent name="F:\WebstormProjects\class-demo\js-demo" />
+      <recent name="F:\WebstormProjects\class-demo\js-demo\2-03-03" />
+      <recent name="F:\WebstormProjects\class-demo\中序遍历" />
     </key>
   </component>
   <component name="RunDashboard">
@@ -241,13 +243,7 @@
       <workItem from="1563177758554" duration="3660000" />
       <workItem from="1563257400911" duration="1330000" />
       <workItem from="1563345290209" duration="14308000" />
-    </task>
-    <task id="LOCAL-00040" summary="作业案例">
-      <created>1556957258192</created>
-      <option name="number" value="00040" />
-      <option name="presentableId" value="LOCAL-00040" />
-      <option name="project" value="LOCAL" />
-      <updated>1556957258192</updated>
+      <workItem from="1563437575990" duration="440000" />
     </task>
     <task id="LOCAL-00041" summary="作业案例">
       <created>1556957498902</created>
@@ -585,11 +581,18 @@
       <option name="project" value="LOCAL" />
       <updated>1563377329378</updated>
     </task>
-    <option name="localTasksCounter" value="89" />
+    <task id="LOCAL-00089" summary="作业案例">
+      <created>1563437600611</created>
+      <option name="number" value="00089" />
+      <option name="presentableId" value="LOCAL-00089" />
+      <option name="project" value="LOCAL" />
+      <updated>1563437600612</updated>
+    </task>
+    <option name="localTasksCounter" value="90" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="97529000" />
+    <option name="totallyTimeSpent" value="97969000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="847" y="43" width="1001" height="998" extended-state="0" />
@@ -856,13 +859,13 @@
     <entry file="file://$PROJECT_DIR$/git/logoneline.png">
       <provider selected="true" editor-type-id="images" />
     </entry>
+    <entry file="file://$PROJECT_DIR$/git/gitlog.png">
+      <provider selected="true" editor-type-id="images" />
+    </entry>
     <entry file="file://$PROJECT_DIR$/git/change1.png">
       <provider selected="true" editor-type-id="images" />
     </entry>
     <entry file="file://$PROJECT_DIR$/git/change2.png">
-      <provider selected="true" editor-type-id="images" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/git/gitlog.png">
       <provider selected="true" editor-type-id="images" />
     </entry>
     <entry file="file://$PROJECT_DIR$/git/change3.png">
@@ -871,13 +874,13 @@
     <entry file="file://$PROJECT_DIR$/git/2.5add1.png">
       <provider selected="true" editor-type-id="images" />
     </entry>
-    <entry file="file://$PROJECT_DIR$/git/2.5add4.png">
-      <provider selected="true" editor-type-id="images" />
-    </entry>
     <entry file="file://$PROJECT_DIR$/git/2.5add2.png">
       <provider selected="true" editor-type-id="images" />
     </entry>
     <entry file="file://$PROJECT_DIR$/git/2.5add3.png">
+      <provider selected="true" editor-type-id="images" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/git/2.5add4.png">
       <provider selected="true" editor-type-id="images" />
     </entry>
     <entry file="file://$PROJECT_DIR$/git/branch2.png">
