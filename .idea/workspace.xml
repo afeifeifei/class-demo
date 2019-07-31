@@ -1,7 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="9b9ae43b-79ed-4986-8af0-25250cc5f58c" name="Default" comment="作业案例" />
+    <list default="true" id="9b9ae43b-79ed-4986-8af0-25250cc5f58c" name="Default" comment="作业案例">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+    </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -133,14 +135,7 @@
       <workItem from="1563345290209" duration="14308000" />
       <workItem from="1563437575990" duration="1783000" />
       <workItem from="1564474407623" duration="609000" />
-      <workItem from="1564555794111" duration="832000" />
-    </task>
-    <task id="LOCAL-00044" summary="作业案例">
-      <created>1557556026179</created>
-      <option name="number" value="00044" />
-      <option name="presentableId" value="LOCAL-00044" />
-      <option name="project" value="LOCAL" />
-      <updated>1557556026179</updated>
+      <workItem from="1564555794111" duration="1497000" />
     </task>
     <task id="LOCAL-00045" summary="作业案例">
       <created>1557556465482</created>
@@ -478,7 +473,14 @@
       <option name="project" value="LOCAL" />
       <updated>1564556348518</updated>
     </task>
-    <option name="localTasksCounter" value="93" />
+    <task id="LOCAL-00093" summary="作业案例">
+      <created>1564556684067</created>
+      <option name="number" value="00093" />
+      <option name="presentableId" value="LOCAL-00093" />
+      <option name="project" value="LOCAL" />
+      <updated>1564556684067</updated>
+    </task>
+    <option name="localTasksCounter" value="94" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
