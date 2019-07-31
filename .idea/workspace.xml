@@ -135,21 +135,7 @@
       <workItem from="1563345290209" duration="14308000" />
       <workItem from="1563437575990" duration="1783000" />
       <workItem from="1564474407623" duration="609000" />
-      <workItem from="1564555794111" duration="1497000" />
-    </task>
-    <task id="LOCAL-00045" summary="作业案例">
-      <created>1557556465482</created>
-      <option name="number" value="00045" />
-      <option name="presentableId" value="LOCAL-00045" />
-      <option name="project" value="LOCAL" />
-      <updated>1557556465482</updated>
-    </task>
-    <task id="LOCAL-00046" summary="作业案例">
-      <created>1557820462905</created>
-      <option name="number" value="00046" />
-      <option name="presentableId" value="LOCAL-00046" />
-      <option name="project" value="LOCAL" />
-      <updated>1557820462905</updated>
+      <workItem from="1564555794111" duration="2345000" />
     </task>
     <task id="LOCAL-00047" summary="作业案例">
       <created>1562228141887</created>
@@ -480,7 +466,21 @@
       <option name="project" value="LOCAL" />
       <updated>1564556684067</updated>
     </task>
-    <option name="localTasksCounter" value="94" />
+    <task id="LOCAL-00094" summary="作业案例">
+      <created>1564557578482</created>
+      <option name="number" value="00094" />
+      <option name="presentableId" value="LOCAL-00094" />
+      <option name="project" value="LOCAL" />
+      <updated>1564557578482</updated>
+    </task>
+    <task id="LOCAL-00095" summary="作业案例">
+      <created>1564557673741</created>
+      <option name="number" value="00095" />
+      <option name="presentableId" value="LOCAL-00095" />
+      <option name="project" value="LOCAL" />
+      <updated>1564557673741</updated>
+    </task>
+    <option name="localTasksCounter" value="96" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
